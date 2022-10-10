@@ -34,7 +34,7 @@ class SidebarRow(Gtk.ListBoxRow):
         box.pack_start(label, False, False, 0)
         self.add(box)
 
-class hamonikrwelcome():
+class HamonikrWelcome():
 
     def __init__(self):
         builder = Gtk.Builder()
@@ -327,5 +327,5 @@ class hamonikrwelcome():
         subprocess.Popen(["pkexec", command])
 
 if __name__ == "__main__":
-    hamonikrwelcome()
+    HamonikrWelcome()
     Gtk.main()

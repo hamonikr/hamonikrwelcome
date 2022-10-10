@@ -1,3 +1,10 @@
+hamonikrwelcome (1.0.1) jammy; urgency=medium
+
+  * Update Korean translation
+
+ -- HamoniKR <pkg@hamonikr.org>  Mon, 10 Oct 2022 17:20:15 +0900
+
+
 hamonikrwelcome (1.0.0) jammy; urgency=medium
 
   * Release for HamoniKR 6.0
