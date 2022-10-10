@@ -1,0 +1,5 @@
+#!/bin/bash
+
+intltool-extract --type=gettext/glade ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui
+xgettext --language=Python --keyword=_ --keyword=N_ --output=hamonikrwelcome.pot ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py generate_desktop_files ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h
+rm -f ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h

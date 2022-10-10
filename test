@@ -1,0 +1,9 @@
+#!/bin/bash
+
+sudo rm -rf /usr/lib/hamonikr/hamonikrwelcome
+sudo cp -R usr /
+sudo cp -R etc /
+sudo cp hamonikr-meta-codecs.desktop /usr/share/applications/
+sudo cp po/ko.mo /usr/share/locale/ko/LC_MESSAGES/hamonikrwelcome.mo
+
+hamonikrwelcome

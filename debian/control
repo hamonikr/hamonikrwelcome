@@ -1,0 +1,20 @@
+Source: hamonikrwelcome
+Section: admin
+Priority: optional
+Maintainer: HamoniKR <pkg@hamonikr.org> 
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.5
+
+Package: hamonikrwelcome
+Architecture: all
+Depends: python3 (>= 3.3),
+         python3-gi,
+         python3-xapp (>= 1.0.1),
+         hamonikr-system,
+         mint-common,
+         apturl,
+         ${misc:Depends},
+Conflicts: mintassistant, mintassistant-gnome, mintassistant-kde, mintwelcome
+Replaces: mintassistant, mintassistant-gnome, mintassistant-kde, mintwelcome
+Description: Welcome screen for HamoniKR
+ Shows important information about the release/edition of HamoniKR.

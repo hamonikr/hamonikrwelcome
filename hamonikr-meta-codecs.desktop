@@ -1,0 +1,12 @@
+[Desktop Entry]
+Exec=apturl apt://mint-meta-codecs?refresh=yes
+Icon=applications-multimedia
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=Application;AudioVideo;Audio;
+StartupNotify=false
+Name=Install Multimedia Codecs
+Name[ko]=멀티미디어 코덱 설치
+Comment=Add all the missing multimedia codecs
+Comment[ko]=설치되지 않은 멀티미디어 코덱 설치

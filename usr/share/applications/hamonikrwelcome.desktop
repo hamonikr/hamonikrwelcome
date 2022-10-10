@@ -1,0 +1,12 @@
+[Desktop Entry]
+Exec=hamonikrwelcome
+Icon=hamonikrwelcome
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=GNOME;GTK;Settings;DesktopSettings;
+StartupNotify=false
+Name=Welcome Screen
+Name[ko]=환영합니다
+Comment=Introduction to HamoniKR OS
+Comment[ko]=하모니카 소개

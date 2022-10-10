@@ -1,0 +1,274 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-10 16:27+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:125
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:1
+msgid "Welcome"
+msgstr ""
+
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:130
+msgid "First Steps"
+msgstr ""
+
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:134
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:5
+msgid "Documentation"
+msgstr ""
+
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:138
+msgid "Help"
+msgstr ""
+
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:142
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:2
+msgid "Contribute"
+msgstr ""
+
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:149
+msgid "Show this dialog at startup"
+msgstr ""
+
+#: generate_desktop_files:24
+msgid "Welcome Screen"
+msgstr ""
+
+#: generate_desktop_files:24
+msgid "Introduction to HamoniKR"
+msgstr ""
+
+#: generate_desktop_files:37
+msgid "Install Multimedia Codecs"
+msgstr ""
+
+#: generate_desktop_files:37
+msgid "Add all the missing multimedia codecs"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:3
+msgid ""
+"HamoniKR is a great project. It is open to anyone who wants to participate. "
+"There are many ways to help. Click the button below to see how you can get "
+"involved."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:4
+msgid "Launch"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:6
+msgid ""
+"HamoniKR documentation consists of a collection of guides, available in PDF, "
+"ePUB and HTML and available in many languages. Click the button below to see "
+"which guides are available."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:7
+msgid "New Features"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:8
+msgid ""
+"Click the button below to discover the new features introduced in this "
+"version of HamoniKR."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:9
+msgid "Release Notes"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:10
+msgid ""
+"Click the button below to read about known bugs, limitations and workarounds "
+"for this version of HamoniKR."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:11
+msgid "Desktop Colors"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:12
+msgid ""
+"First, make yourself at home. Choose your favorite color and whether you "
+"prefer a light or a dark desktop theme."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:13
+msgid "Panel Layout"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:14
+msgid "Choose your favorite layout."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:15
+msgid "Traditional"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:16
+msgid "A small panel and a traditional window list."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:17
+msgid "Modern"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:18
+msgid "A large panel with grouped windows and a small system tray."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:19
+msgid ""
+"Note: Cinnamon will restart after you choose a new layout. Any customization "
+"you made to the panel will be lost."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:20
+msgid "System Snapshots"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:21
+msgid ""
+"Next, let's set automatic system snapshots. A minimum of two daily and two "
+"boot snapshots are recommended. If anything breaks, you can then restore "
+"your computer to its previous working state."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:22
+msgid "Driver Manager"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:23
+msgid ""
+"Check the Driver Manager to see if it recommends any additional drivers for "
+"your computer. Most hardware components are recognized by the Linux kernel "
+"and work automatically without the need to install drivers. Some however "
+"require proprietary drivers to be recognized or to work better."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:24
+msgid "Multimedia Codecs"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:25
+msgid ""
+"Additional multimedia codecs are required to support some formats and to "
+"play popular audio, video and web content. Click the button below to install "
+"them."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:26
+msgid "Update Manager"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:27
+msgid ""
+"The little shield icon in your system tray is your Update Manager. It "
+"provides software updates, security updates and kernel updates to fix bugs, "
+"keep your computer safe and support newer hardware components."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:28
+msgid "System Settings"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:29
+msgid ""
+"Have a look at the system settings and configure your operating system the "
+"way you like. Don't hesitate to customize it and make it feel like home."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:30
+msgid "Software Manager"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:31
+msgid ""
+"There are about 60,000 applications available. HamoniKR comes with the bare "
+"minimum to get you started. The Software Manager is there if you're looking "
+"for more."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:32
+msgid "Firewall"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:33
+msgid "Control and monitor network traffic by enabling the firewall."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:34
+msgid "Community"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:35
+msgid ""
+"HamoniKR community are the best place to find help. Join thousands of users, "
+"search topics and threads and find solutions to your problems."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:36
+msgid "Chat Room"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:37
+msgid ""
+"You can also connect to the Chat room and chat with users who are currently "
+"online. Ask a question, maybe someone there knows the solution?"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:38
+msgid ""
+"HamoniKR has a great community. Many users will welcome you with open arms "
+"and be delighted to help you. Make sure to be patient and respectful with "
+"them. Keep a happy and positive attitude and provide accurate information "
+"when someone helps you."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:39
+msgid ""
+"If you have a bad experience with another user, try to solve it responsibly "
+"or contact the moderation team. Although we can't guarantee everyone will "
+"behave nicely, our project promotes help, respect, tolerance, ideas and "
+"constructive discussions."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:40
+msgid "Welcome to HamoniKR"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:41
+msgid "Welcome to your new operating system!"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:42
+msgid ""
+"This welcome screen will guide you through your first steps, show you how to "
+"find help and where to get more information about HamoniKR."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:43
+msgid ""
+"On behalf of the development team and everyone involved in the project, we'd "
+"like to thank you for choosing HamoniKR. We hope you'll enjoy using it as "
+"much as we enjoy working on it."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:44
+msgid "Have a great time and don't hesitate to send us your feedback."
+msgstr ""

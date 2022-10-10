@@ -1,0 +1,312 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: hamonikrwelcome\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-10-10 16:27+0900\n"
+"PO-Revision-Date: 2022-10-10 16:36+0900\n"
+"Last-Translator: Kevin Kim <root@hamonikr.org>\n"
+"Language-Team: HamoniKR <pkg@hamonikr.org>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2021-12-31 12:16+0000\n"
+"X-Generator: Poedit 2.3\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:125
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:1
+msgid "Welcome"
+msgstr "반갑습니다"
+
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:130
+msgid "First Steps"
+msgstr "첫 번째 단계"
+
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:134
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:5
+msgid "Documentation"
+msgstr "서류 작업"
+
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:138
+msgid "Help"
+msgstr "도움말"
+
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:142
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:2
+msgid "Contribute"
+msgstr "기여"
+
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:149
+msgid "Show this dialog at startup"
+msgstr "시작할 때 이 창을 보여줌"
+
+#: generate_desktop_files:24
+msgid "Welcome Screen"
+msgstr "환영합니다"
+
+#: generate_desktop_files:24
+msgid "Introduction to HamoniKR"
+msgstr "하모니카 소개"
+
+#: generate_desktop_files:37
+msgid "Install Multimedia Codecs"
+msgstr "멀티미디어 코덱 설치"
+
+#: generate_desktop_files:37
+msgid "Add all the missing multimedia codecs"
+msgstr "설치되지 않은 멀티미디어 코덱 설치"
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:3
+msgid ""
+"HamoniKR is a great project. It is open to anyone who wants to participate. "
+"There are many ways to help. Click the button below to see how you can get "
+"involved."
+msgstr ""
+"이 프로젝트는 참여를 원하는 누구에게나 열려 있으며 여러분이 도움을 줄 수 있"
+"는 여러가지 방법들이 있습니다. 참여 방법을 보려면 아래 버튼을 클릭하십시오."
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:4
+msgid "Launch"
+msgstr "실행"
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:6
+msgid ""
+"HamoniKR documentation consists of a collection of guides, available in PDF, "
+"ePUB and HTML and available in many languages. Click the button below to see "
+"which guides are available."
+msgstr ""
+"하모니카는 사용자를 위한 동영상 및 문서를 다양하게 제공합니다. 사용 가능한 가"
+"이드라인을 보려면 아래 버튼을 클릭 하세요."
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:7
+msgid "New Features"
+msgstr "새로운 기능"
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:8
+msgid ""
+"Click the button below to discover the new features introduced in this "
+"version of HamoniKR."
+msgstr "이 버전에서 새롭게 도입된 기능을 확인하려면 아래 버튼을 클릭하세요."
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:9
+msgid "Release Notes"
+msgstr "릴리즈 노트"
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:10
+msgid ""
+"Click the button below to read about known bugs, limitations and workarounds "
+"for this version of HamoniKR."
+msgstr ""
+"이 버전의 알려진 버그, 제한 사항 및 해결 방법을 보려면 아래 버튼을 클릭하십시"
+"오."
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:11
+msgid "Desktop Colors"
+msgstr "데스크톱 색상"
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:12
+msgid ""
+"First, make yourself at home. Choose your favorite color and whether you "
+"prefer a light or a dark desktop theme."
+msgstr "좋아하는 색상과 바탕 화면 테마를 선택하세요."
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:13
+msgid "Panel Layout"
+msgstr "패널 레이아웃"
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:14
+msgid "Choose your favorite layout."
+msgstr "좋아하는 레이아웃을 고르세요."
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:15
+msgid "Traditional"
+msgstr "전통적"
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:16
+msgid "A small panel and a traditional window list."
+msgstr "작은 패널과 전통적인 창 목록."
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:17
+msgid "Modern"
+msgstr "현대적"
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:18
+msgid "A large panel with grouped windows and a small system tray."
+msgstr "그룹화된 창과 작은 시스템 트레이가 있는 큰 패널."
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:19
+msgid ""
+"Note: Cinnamon will restart after you choose a new layout. Any customization "
+"you made to the panel will be lost."
+msgstr ""
+"참고: 새 레이아웃을 선택한 후 데스크톱 환경이 재시작 됩니다. 패널에 대한 모든"
+"사용자 정의는 사라집니다."
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:20
+msgid "System Snapshots"
+msgstr "시스템 스냅샷"
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:21
+msgid ""
+"Next, let's set automatic system snapshots. A minimum of two daily and two "
+"boot snapshots are recommended. If anything breaks, you can then restore "
+"your computer to its previous working state."
+msgstr ""
+"다음으로 자동 시스템 스냅샷을 설정해봅시다. 최소 2개의 일일 스냅샷과 2개의 부"
+"트 스냅샷이 권장됩니다. 뭔가 망가지면 컴퓨터를 이전 작동 상태로 복원할 수 있"
+"습니다."
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:22
+msgid "Driver Manager"
+msgstr "드라이버 매니저"
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:23
+msgid ""
+"Check the Driver Manager to see if it recommends any additional drivers for "
+"your computer. Most hardware components are recognized by the Linux kernel "
+"and work automatically without the need to install drivers. Some however "
+"require proprietary drivers to be recognized or to work better."
+msgstr ""
+"드라이버 매니저에서 컴퓨터에 대한 추가 드라이버를 권장하는지 확인하세요. 대부"
+"분의 하드웨어 구성 요소는 리눅스 커널이 인식하며 드라이버를 설치할 필요 없이 "
+"자동으로 작동합니다. 그러나 일부는 독점 드라이버가 필요하거나 더 잘 작동합니"
+"다."
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:24
+msgid "Multimedia Codecs"
+msgstr "멀티미디어 코덱"
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:25
+msgid ""
+"Additional multimedia codecs are required to support some formats and to "
+"play popular audio, video and web content. Click the button below to install "
+"them."
+msgstr ""
+"일부 포맷의 지원에 그리고 널리 사용되는 오디오, 비디오 및 웹 콘텐츠를 재생하"
+"려면 추가 멀티미디어 코덱이 필요합니다. 아래 버튼을 클릭해서 설치하세요."
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:26
+msgid "Update Manager"
+msgstr "업데이트 매니저"
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:27
+msgid ""
+"The little shield icon in your system tray is your Update Manager. It "
+"provides software updates, security updates and kernel updates to fix bugs, "
+"keep your computer safe and support newer hardware components."
+msgstr ""
+"시스템 트레이에 보이는 작은 방패 아이콘이 업데이트 매니저입니다. 버그를 수정"
+"하고 컴퓨터를 안전하게 유지하며 최신 하드웨어 구성 요소를 지원하는 소프트웨"
+"어 업데이트, 보안 업데이트 및 커널 업데이트를 제공합니다."
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:28
+msgid "System Settings"
+msgstr "시스템 설정"
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:29
+msgid ""
+"Have a look at the system settings and configure your operating system the "
+"way you like. Don't hesitate to customize it and make it feel like home."
+msgstr ""
+"시스템 설정을 확인하시고 운영 체제를 여러분에게 맞게 설정하세요.자신에게 맞"
+"게 자유롭게 꾸며보세요."
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:30
+msgid "Software Manager"
+msgstr "소프트웨어 매니저"
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:31
+msgid ""
+"There are about 60,000 applications available. HamoniKR comes with the bare "
+"minimum to get you started. The Software Manager is there if you're looking "
+"for more."
+msgstr ""
+"처음에는 사용자가 데스크톱을 사용할 수 있는 기본 프로그램만 제공됩니다.만약 "
+"필요한 다른 프로그램이 있는 경우, 소프트웨어 관리자에서 더 많은 애플리케이션"
+"을 찾을 수 있습니다. (약 60,000개)."
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:32
+msgid "Firewall"
+msgstr "방화벽"
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:33
+msgid "Control and monitor network traffic by enabling the firewall."
+msgstr "방화벽을 실행해서 네트워크 트래픽을 조절하고 감시합니다."
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:34
+msgid "Community"
+msgstr "커뮤니티"
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:35
+msgid ""
+"HamoniKR community are the best place to find help. Join thousands of users, "
+"search topics and threads and find solutions to your problems."
+msgstr ""
+"커뮤니티 웹사이트는 도움을 받을 수 있는 최고의 장소입니다. 수천 명의 사용자"
+"와 함께 주제와 게시물을 검색하고 문제에 대한 해결책을 찾으십시오."
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:36
+msgid "Chat Room"
+msgstr "채팅방"
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:37
+msgid ""
+"You can also connect to the Chat room and chat with users who are currently "
+"online. Ask a question, maybe someone there knows the solution?"
+msgstr ""
+"대화방에 연결하여 현재 온라인 상태 인 다른 사용자와 채팅할 수도 있습니다. 모"
+"르는 문제는 물어보세요, 어쩌면 그곳의 누군가는 해결책을 알고 있지 않을까요?"
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:38
+msgid ""
+"HamoniKR has a great community. Many users will welcome you with open arms "
+"and be delighted to help you. Make sure to be patient and respectful with "
+"them. Keep a happy and positive attitude and provide accurate information "
+"when someone helps you."
+msgstr ""
+"하모니카에는 훌륭한 커뮤니티가 있습니다. 많은 사용자들이 여러분을 환영할 것이"
+"며 도움을 드릴 수 있음을 기뻐할 것입니다. 누군가 여러분을 도와 드릴 때 기쁘"
+"고 긍정적인 마음가짐으로 정확한 정보를 제공해 주세요."
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:39
+msgid ""
+"If you have a bad experience with another user, try to solve it responsibly "
+"or contact the moderation team. Although we can't guarantee everyone will "
+"behave nicely, our project promotes help, respect, tolerance, ideas and "
+"constructive discussions."
+msgstr ""
+"우리 프로젝트는 도움, 존중, 관용, 아이디어 및 건설적인 토론을 장려합니다. 다"
+"른 사용자와 좋지 않은 일이 생기는 경우 스스로 해결하기 어려우면 운영 팀에 연"
+"락하세요."
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:40
+msgid "Welcome to HamoniKR"
+msgstr "환영합니다"
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:41
+msgid "Welcome to your new operating system!"
+msgstr "하모니카와 함께 참여하는 것을 환영합니다!"
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:42
+msgid ""
+"This welcome screen will guide you through your first steps, show you how to "
+"find help and where to get more information about HamoniKR."
+msgstr ""
+"이 화면은 여러분을 첫걸음부터 도움을 얻을 수 있는 방법과 하모니카에 대한 더 "
+"많은 정보를 얻을 수 있는 곳으로 안내할 것입니다."
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:43
+msgid ""
+"On behalf of the development team and everyone involved in the project, we'd "
+"like to thank you for choosing HamoniKR. We hope you'll enjoy using it as "
+"much as we enjoy working on it."
+msgstr ""
+"개발 팀과 프로젝트에 참여한 모든 사람들의 이름으로, 하모니카를 선택해 주신 것"
+"에 대해 감사드립니다. 우리가 이 일에 참여하며 즐기고 있는 만큼 여러분도 즐겁"
+"게 사용하시기를 바랍니다."
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:44
+msgid "Have a great time and don't hesitate to send us your feedback."
+msgstr ""
+"좋은 시간 보내시고 저희에게 당신의 피드백을 보내는 것을 주저하지 마세요."

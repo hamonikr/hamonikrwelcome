@@ -1,0 +1,36 @@
+#!/usr/bin/python3
+
+DOMAIN = "hamonikrwelcome"
+PATH = "/usr/share/hamonikr/locale"
+
+import os
+import gettext
+from mintcommon import additionalfiles
+
+os.environ['LANGUAGE'] = "en_US.UTF-8"
+gettext.install(DOMAIN, PATH)
+
+prefix = """[Desktop Entry]
+Exec=hamonikrwelcome
+Icon=hamonikrwelcome
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=GNOME;GTK;Settings;DesktopSettings;
+NotShowIn=KDE;
+StartupNotify=false
+"""
+
+additionalfiles.generate(DOMAIN, PATH, "usr/share/applications/hamonikrwelcome.desktop", prefix, _("Welcome Screen"), _("Introduction to HamoniKR"), "")
+
+prefix = """[Desktop Entry]
+Exec=apturl apt://mint-meta-codecs?refresh=yes
+Icon=applications-multimedia
+Terminal=false
+Type=Application
+Encoding=UTF-8
+Categories=Application;AudioVideo;Audio;
+StartupNotify=false
+"""
+
+additionalfiles.generate(DOMAIN, PATH, "hamonikr-meta-codecs.desktop", prefix, _("Install Multimedia Codecs"), _("Add all the missing multimedia codecs"), "")
