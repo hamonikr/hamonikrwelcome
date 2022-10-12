@@ -100,6 +100,9 @@ class HamonikrWelcome():
             # Hide settings
             builder.get_object("box_first_steps").remove(builder.get_object("box_settings"))
 
+        # Hide Desktop colors
+        builder.get_object("box_first_steps").remove(builder.get_object("box_colors"))
+
         # Hide Cinnamon layout settings in other DEs
         if not de_is_cinnamon:
             builder.get_object("box_first_steps").remove(builder.get_object("box_cinnamon"))
