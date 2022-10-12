@@ -167,9 +167,12 @@ class HamonikrWelcome():
             surface = self.surface_for_path("/usr/share/hamonikr/hamonikrwelcome/modern.png", scale)
             builder.get_object("img_modern").set_from_surface(surface)
         else:
-            surface = self.surface_for_path("/usr/share/hamonikr/hamonikrwelcome/legacy-hidpi.png", scale)
+            # Desktop theme image is too large to use.
+            # surface = self.surface_for_path("/usr/share/hamonikr/hamonikrwelcome/legacy-hidpi.png", scale)
+            surface = self.surface_for_path("/usr/share/hamonikr/hamonikrwelcome/legacy.png", scale)
             builder.get_object("img_legacy").set_from_surface(surface)
-            surface = self.surface_for_path("/usr/share/hamonikr/hamonikrwelcome/modern-hidpi.png", scale)
+            # surface = self.surface_for_path("/usr/share/hamonikr/hamonikrwelcome/modern-hidpi.png", scale)
+            surface = self.surface_for_path("/usr/share/hamonikr/hamonikrwelcome/modern.png", scale)
             builder.get_object("img_modern").set_from_surface(surface)
 
         path = "/usr/share/hamonikr/hamonikrwelcome/colors/"
@@ -202,59 +205,11 @@ class HamonikrWelcome():
             os.system("touch %s" % NORUN_FLAG)
 
     def on_button_layout_clicked (self, button, style):
-
-        applets_legacy = ['panel1:left:0:menu@cinnamon.org',
-                          'panel1:left:1:show-desktop@cinnamon.org',
-                          'panel1:left:2:panel-launchers@cinnamon.org',
-                          'panel1:left:3:window-list@cinnamon.org',
-                          'panel1:right:0:systray@cinnamon.org',
-                          'panel1:right:1:xapp-status@cinnamon.org',
-                          'panel1:right:2:keyboard@cinnamon.org',
-                          'panel1:right:3:notifications@cinnamon.org',
-                          'panel1:right:4:printers@cinnamon.org',
-                          'panel1:right:5:removable-drives@cinnamon.org',
-                          'panel1:right:6:favorites@cinnamon.org',
-                          'panel1:right:7:user@cinnamon.org',
-                          'panel1:right:8:network@cinnamon.org',
-                          'panel1:right:9:sound@cinnamon.org',
-                          'panel1:right:10:power@cinnamon.org',
-                          'panel1:right:11:calendar@cinnamon.org']
-
-        applets_new = ['panel1:left:0:menu@cinnamon.org',
-                       'panel1:left:1:show-desktop@cinnamon.org',
-                       'panel1:left:2:grouped-window-list@cinnamon.org',
-                       'panel1:right:0:systray@cinnamon.org',
-                       'panel1:right:1:xapp-status@cinnamon.org',
-                       'panel1:right:2:notifications@cinnamon.org',
-                       'panel1:right:3:printers@cinnamon.org',
-                       'panel1:right:4:removable-drives@cinnamon.org',
-                       'panel1:right:5:keyboard@cinnamon.org',
-                       'panel1:right:6:favorites@cinnamon.org',
-                       'panel1:right:7:network@cinnamon.org',
-                       'panel1:right:8:sound@cinnamon.org',
-                       'panel1:right:9:power@cinnamon.org',
-                       'panel1:right:10:calendar@cinnamon.org']
-
-        settings = Gio.Settings("org.cinnamon")
-        settings.set_strv("panels-enabled", ['1:0:bottom'])
-
-        applets = applets_new
-        left_icon_size = 0
-        center_icon_size = 0
-        right_icon_size = 0
+        # HamoniKR themes change
         if style == LAYOUT_STYLE_LEGACY:
-            applets = applets_legacy
-            panel_size = 27
-            menu_label = "Menu"
+            os.system("hamonikr-theme-setting restore && hamonikr-theme-setting winstyle")
         elif style == LAYOUT_STYLE_NEW:
-            panel_size = 40
-            right_icon_size = 24
-            menu_label = ""
-
-        settings.set_strv("panels-height", ['1:%s' % panel_size])
-        settings.set_strv("enabled-applets", applets)
-        settings.set_string("app-menu-label", menu_label)
-        settings.set_string("panel-zone-icon-sizes", "[{\"panelId\": 1, \"left\": %s, \"center\": %s, \"right\": %s}]" % (left_icon_size, center_icon_size, right_icon_size))
+            os.system("hamonikr-theme-setting restore && sleep 1 && hamonikr-theme-setting macstyle")
         os.system("cinnamon --replace &")
 
     def on_dark_mode_changed(self, button, state):
