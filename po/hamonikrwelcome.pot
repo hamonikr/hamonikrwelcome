@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-10 16:27+0900\n"
+"POT-Creation-Date: 2022-10-12 16:07+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,30 +17,30 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:125
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:128
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:1
 msgid "Welcome"
 msgstr ""
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:130
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:133
 msgid "First Steps"
 msgstr ""
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:134
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:137
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:5
 msgid "Documentation"
 msgstr ""
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:138
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:141
 msgid "Help"
 msgstr ""
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:142
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:145
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:2
 msgid "Contribute"
 msgstr ""
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:149
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:152
 msgid "Show this dialog at startup"
 msgstr ""
 
@@ -52,11 +52,11 @@ msgstr ""
 msgid "Introduction to HamoniKR"
 msgstr ""
 
-#: generate_desktop_files:37
+#: generate_desktop_files:36
 msgid "Install Multimedia Codecs"
 msgstr ""
 
-#: generate_desktop_files:37
+#: generate_desktop_files:36
 msgid "Add all the missing multimedia codecs"
 msgstr ""
 
@@ -121,7 +121,7 @@ msgid "Traditional"
 msgstr ""
 
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:16
-msgid "A small panel and a traditional window list."
+msgid "It's a traditional Windows theme."
 msgstr ""
 
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:17
@@ -129,7 +129,7 @@ msgid "Modern"
 msgstr ""
 
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:18
-msgid "A large panel with grouped windows and a small system tray."
+msgid "Windows theme with panels on top."
 msgstr ""
 
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:19

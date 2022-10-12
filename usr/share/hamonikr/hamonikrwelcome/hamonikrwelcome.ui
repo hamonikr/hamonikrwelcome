@@ -1060,7 +1060,7 @@
                                       <object class="GtkLabel">
                                         <property name="visible">True</property>
                                         <property name="can_focus">False</property>
-                                        <property name="label" translatable="yes">A small panel and a traditional window list.</property>
+                                        <property name="label" translatable="yes">It's a traditional Windows theme.</property>
                                         <property name="wrap">True</property>
                                       </object>
                                       <packing>
@@ -1120,7 +1120,7 @@
                                       <object class="GtkLabel">
                                         <property name="visible">True</property>
                                         <property name="can_focus">False</property>
-                                        <property name="label" translatable="yes">A large panel with grouped windows and a small system tray.</property>
+                                        <property name="label" translatable="yes">Windows theme with panels on top.</property>
                                         <property name="wrap">True</property>
                                       </object>
                                       <packing>

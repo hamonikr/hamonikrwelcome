@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hamonikrwelcome\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-10 16:27+0900\n"
+"POT-Creation-Date: 2022-10-12 16:07+0900\n"
 "PO-Revision-Date: 2022-10-10 16:36+0900\n"
 "Last-Translator: Kevin Kim <root@hamonikr.org>\n"
 "Language-Team: HamoniKR <pkg@hamonikr.org>\n"
@@ -14,30 +14,30 @@ msgstr ""
 "X-Generator: Poedit 2.3\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:125
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:128
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:1
 msgid "Welcome"
 msgstr "반갑습니다"
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:130
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:133
 msgid "First Steps"
 msgstr "첫 번째 단계"
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:134
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:137
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:5
 msgid "Documentation"
 msgstr "서류 작업"
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:138
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:141
 msgid "Help"
 msgstr "도움말"
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:142
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:145
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:2
 msgid "Contribute"
 msgstr "기여"
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:149
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:152
 msgid "Show this dialog at startup"
 msgstr "시작할 때 이 창을 보여줌"
 
@@ -49,11 +49,11 @@ msgstr "환영합니다"
 msgid "Introduction to HamoniKR"
 msgstr "하모니카 소개"
 
-#: generate_desktop_files:37
+#: generate_desktop_files:36
 msgid "Install Multimedia Codecs"
 msgstr "멀티미디어 코덱 설치"
 
-#: generate_desktop_files:37
+#: generate_desktop_files:36
 msgid "Add all the missing multimedia codecs"
 msgstr "설치되지 않은 멀티미디어 코덱 설치"
 
@@ -124,16 +124,16 @@ msgid "Traditional"
 msgstr "전통적"
 
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:16
-msgid "A small panel and a traditional window list."
-msgstr "작은 패널과 전통적인 창 목록."
+msgid "It's a traditional Windows theme."
+msgstr "전통적인 윈도우 테마입니다."
 
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:17
 msgid "Modern"
 msgstr "현대적"
 
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:18
-msgid "A large panel with grouped windows and a small system tray."
-msgstr "그룹화된 창과 작은 시스템 트레이가 있는 큰 패널."
+msgid "Windows theme with panels on top."
+msgstr "패널이 상단에 있는 윈도우 테마입니다."
 
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:19
 msgid ""
@@ -310,3 +310,6 @@ msgstr ""
 msgid "Have a great time and don't hesitate to send us your feedback."
 msgstr ""
 "좋은 시간 보내시고 저희에게 당신의 피드백을 보내는 것을 주저하지 마세요."
+
+#~ msgid "A large panel with grouped windows and a small system tray."
+#~ msgstr "그룹화된 창과 작은 시스템 트레이가 있는 큰 패널."
