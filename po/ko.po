@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hamonikrwelcome\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-12 16:07+0900\n"
+"POT-Creation-Date: 2022-10-13 17:02+0900\n"
 "PO-Revision-Date: 2022-10-10 16:36+0900\n"
 "Last-Translator: Kevin Kim <root@hamonikr.org>\n"
 "Language-Team: HamoniKR <pkg@hamonikr.org>\n"
@@ -14,30 +14,34 @@ msgstr ""
 "X-Generator: Poedit 2.3\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:128
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:133
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:1
 msgid "Welcome"
 msgstr "반갑습니다"
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:133
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:138
 msgid "First Steps"
 msgstr "첫 번째 단계"
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:137
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:142
+msgid "Second Steps"
+msgstr "추천 프로그램"
+
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:147
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:5
 msgid "Documentation"
 msgstr "서류 작업"
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:141
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:151
 msgid "Help"
 msgstr "도움말"
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:145
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:155
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:2
 msgid "Contribute"
 msgstr "기여"
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:152
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:162
 msgid "Show this dialog at startup"
 msgstr "시작할 때 이 창을 보여줌"
 
@@ -310,6 +314,34 @@ msgstr ""
 msgid "Have a great time and don't hesitate to send us your feedback."
 msgstr ""
 "좋은 시간 보내시고 저희에게 당신의 피드백을 보내는 것을 주저하지 마세요."
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:45
+msgid "Hancom-Office 2022 Beta"
+msgstr "한컴 오피스 2022 베타"
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:46
+msgid ""
+"Hancom-Office 2022 Beta Install Support. The license copyright is owned by "
+"Hancom. It can be end at any time."
+msgstr ""
+"한컴오피스 2022 베타 설치 지원. 라이선스 저작권은 한글과 컴퓨터에게 있습니다. "
+"설치 지원이 종료될 수 있습니다."
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:47
+msgid "Install"
+msgstr "설치"
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:48
+msgid "KakaoTalk(Lutris)"
+msgstr "카카오톡(루트리스)"
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:49
+msgid ""
+"KakaoTalk can be used on Linux using a wine program. KakaoTalk does not "
+"officially support the Linux version, which can be unstable."
+msgstr ""
+"카카오톡을 와인 프로그램을 이용하여 리눅스에서 사용할 수 있습니다. "
+"카카오톡은 공식적으로 리눅스버전을 지원하지 않아 불안정 할 수 있습니다."
 
 #~ msgid "A large panel with grouped windows and a small system tray."
 #~ msgstr "그룹화된 창과 작은 시스템 트레이가 있는 큰 패널."

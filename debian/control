@@ -14,7 +14,7 @@ Depends: python3 (>= 3.3),
          mint-common,
          apturl,
          ${misc:Depends},
-Conflicts: mintassistant, mintassistant-gnome, mintassistant-kde, mintwelcome
-Replaces: mintassistant, mintassistant-gnome, mintassistant-kde, mintwelcome
+Conflicts: 
+Replaces: 
 Description: Welcome screen for HamoniKR
  Shows important information about the release/edition of HamoniKR.

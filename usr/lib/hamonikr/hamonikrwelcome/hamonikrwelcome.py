@@ -85,6 +85,10 @@ class HamonikrWelcome():
         builder.get_object("button_layout_legacy").connect("clicked", self.on_button_layout_clicked, LAYOUT_STYLE_LEGACY)
         builder.get_object("button_layout_new").connect("clicked", self.on_button_layout_clicked, LAYOUT_STYLE_NEW)
 
+        # Custom recommended software
+        builder.get_object("button_hancom").connect("clicked", self.launch, "hoffice-support")
+        builder.get_object("button_kakaotalk").connect("clicked", self.launch, "kakaotalk-install")
+
         # Settings button depends on DE
         de_is_cinnamon = False
         self.theme = None
@@ -131,6 +135,11 @@ class HamonikrWelcome():
         page = builder.get_object("page_first_steps")
         self.stack.add_named(page, "page_first_steps")
         list_box.add(SidebarRow(page, _("First Steps"), "dialog-information-symbolic"))
+
+        page = builder.get_object("page_second_steps")
+        self.stack.add_named(page, "page_second_steps")
+        list_box.add(SidebarRow(page, _("Second Steps"), "dialog-information-symbolic"))
+
 
         page = builder.get_object("page_documentation")
         self.stack.add_named(page, "page_documentation")

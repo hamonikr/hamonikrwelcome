@@ -1,0 +1,116 @@
+#!/bin/bash
+# download hancomoffice
+
+case $LANG in
+  ko*)
+    INSTALLED="hoffice 패키지가 이미 설치되어 있습니다."
+    INSTALLER="인스톨러가 실행중입니다."
+    CHECK_INTERNET="인터넷 연결상태를 확인해주세요."
+    FILE_DOWNLOAD_CHECK="다운로드 저장소에 문제가 있습니다."
+    OK_LABEL="설치"
+    DOWN_TITLE="다운로드..."
+    DOWN_TEXT1="다운로드 중..."
+    DOWN_TEXT2="남은 시간..."
+  ;;
+  *)
+    INSTALLED="hoffice package is already installed."
+    INSTALLER="The installer is running."
+    CHECK_INTERNET="Please check the internet connection status."
+    FILE_DOWNLOAD_CHECK="There is a problem with the download store."
+    OK_LABEL="Install"
+    DOWN_TITLE="Download..."
+    DOWN_TEXT1="Download at..."
+    DOWN_TEXT2="time..."
+  ;;
+esac
+
+CHECK=$(dpkg -l | grep hoffice)
+
+CHECK_iHR=$(dpkg -l | grep hoffice | grep -o iHR)
+
+# 깨진 패키지 제거
+if [ "$CHECK_iHR" = "iHR" ]; then
+    dpkg --configure -a
+    dpkg --remove --force-remove-reinstreq hoffice
+fi
+
+# 설치
+if [ ! -z "$CHECK" ]; then
+    
+    zenity --info --width 300 --text "$INSTALLED"
+    exit 0
+
+else
+
+# 중복 실행 방지
+if [ -f /tmp/hofficeworking ]; then
+    zenity --info --width 300 --text "$INSTALLER"
+    exit 0
+else
+    touch /tmp/hofficeworking
+fi
+
+# 강제 종료 되거나 작업 완료 되었을때 진행
+trap 'rm /tmp/hofficeworking' EXIT
+
+
+# 인터넷 연결상태 확인
+nslookup www.google.com | grep authoritative > /dev/null 2>&1
+if [[ $? != 0 ]]; then
+    zenity --info --width 300 --text "$CHECK_INTERNET"
+    exit 0
+fi
+
+# 동의 페이지
+# zenity --text-info --title="동의" --filename="/home/test/lsof.txt" --checkbox="Yes"
+# result=$?
+# if ((result==0)); then
+#   echo "OK"
+# else
+#   echo "NO"
+#   exit 0
+# fi
+
+# 파일 존재 유무 확인(원격지 저장소에 있는)
+REPO_CHECK=$(wget -S --spider --header="Host: cdn.hancom.com" --header="Referer: https://www.hancom.com/cs_center" https://cdn.hancom.com/pds/hnc/DOWN/gooroom/hoffice_11.20.0.1520_amd64.deb 2>&1 | grep "Content-Type" | grep "application")
+if [[ -z $REPO_CHECK ]]; then
+    zenity --info --width 200 --text "$FILE_DOWNLOAD_CHECK"
+    exit 0
+fi
+
+# 이전 파일이 있을 경우 제거
+if [ -f /tmp/hoffice_11.20.0.1520_amd64.deb ]; then
+    rm -r /tmp/hoffice_11.20.0.1520_amd64.deb
+fi
+
+wget -P /tmp/ --header="Host: cdn.hancom.com" --header="Referer: https://www.hancom.com/cs_center" https://cdn.hancom.com/pds/hnc/DOWN/gooroom/hoffice_11.20.0.1520_amd64.deb 2>&1 \
+ | sed -u "s/.* \([0-9]\+%\)\ \+\([0-9.]\+.\) \(.*\)/\1\n# $DOWN_TEXT1\2\/s, $DOWN_TEXT2\3/" \
+ | zenity --progress --width=300 --height=100 --ok-label="$OK_LABEL" --title=$DOWN_TITLE
+
+result=$?
+
+if ((result==0)); then
+    echo "Done"
+    gdebi-gtk /tmp/hoffice_11.20.0.1520_amd64.deb
+    # 한글 입력을 위한 nimf.so 파일 복사
+    if [ -d /opt/hnc/hoffice11 ]; then
+        cp -r /usr/share/hamonikr/hamonikrwelcome/scripts/libqt5im-nimf.so /opt/hnc/hoffice11/Bin/qt/plugins/platforminputcontexts/libqt5im-nimf.so
+    fi    
+    rm /tmp/hoffice_*
+else
+    echo "Cancel"
+    # 취소, 파일제거
+    rm /tmp/hoffice_*
+fi
+
+RUNNING=0
+while [ $RUNNING -eq 0 ]
+do
+    if [ -z "$(pidof zenity)" ]; then
+        pkill wget
+        RUNNING=1
+    fi
+done
+
+fi
+

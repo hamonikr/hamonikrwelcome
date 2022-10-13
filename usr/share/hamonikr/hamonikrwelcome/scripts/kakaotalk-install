@@ -1,0 +1,75 @@
+#!/bin/bash
+
+case $LANG in
+  ko*)
+    INSTALLED="이미 설치되어 있습니다.\n/home/$RUID/Games/kakaotalk\n폴더를 제거하고 다시 실행해주세요"
+    INSTALLER="인스톨러가 실행중입니다."
+    CHECK_INTERNET="인터넷 연결상태를 확인해주세요."
+    LUTRIS_CHECK="lutris 패키지가 정상적이지 않습니다.\n다시 설치해주세요"
+    LUTRIS_INSTALL="카카오톡을 설치하려면 lutris 프로그램이 필요합니다.\n설치하시겠습니까?"
+
+  ;;
+  *)
+    INSTALLED="The package is already installed.\nIf you want to reinstall,\nremove /home/$RUID/Games/kakaotalk folder."
+    INSTALLER="The installer is running."
+    CHECK_INTERNET="Please check the internet connection status."
+    LUTRIS_CHECK="The lutris package is not normal.\nPlease reinstall."
+    LUTRIS_INSTALL="I need a lutris program to install KakaoTalk.\nDo you want to install it?"
+
+  ;;
+esac
+
+RUID=$(who | awk 'FNR == 1 {print $1}')
+echo "$RUID"
+
+# 인터넷 연결상태 확인
+nslookup www.google.com | grep authoritative > /dev/null 2>&1
+if [[ $? != 0 ]]; then
+    zenity --info --width 200 --text "$CHECK_INTERNET"
+    exit 0
+fi
+
+# 중복 실행 방지
+if [ -f /tmp/kakaotalkworking ]; then
+  zenity --info --width 200 --text "$INSTALLER"
+  exit 0
+else
+  touch /tmp/kakaotalkworking
+fi
+
+# 강제 종료 되거나 작업 완료 되었을때 진행
+trap 'rm /tmp/kakaotalkworking' EXIT
+
+# lutris 설치 확인
+CHECK=$(dpkg -l | grep lutris)
+CHECK_iHR=$(dpkg -l | grep lutris | grep -o iHR)
+
+if [ ! -z "$CHECK_iHR" ]; then
+  zenity --info --width 300 --text "$LUTRIS_CHECK"
+  dpkg --configure -a
+  dpkg --remove --force-remove-reinstreq lutris
+  exit 0
+fi
+
+if [ ! -z "$CHECK" ]; then
+  # lutris 에서 설치
+  if [ -d "/home/$RUID/Games/kakaotalk" ]; then
+    zenity --info --width 350 --text "$INSTALLED"
+    exit 0
+  else
+    sudo -u $RUID /usr/games/lutris -i /usr/share/hamonikr/hamonikrwelcome/scripts/KakaoTalk.yml
+  fi
+else
+
+  if zenity --question --width 350 --text="$LUTRIS_INSTALL"; then
+    
+    sudo add-apt-repository -y ppa:lutris-team/lutris
+    xdg-open apt://lutris?refresh=yes
+
+    sudo -u $RUID /usr/games/lutris -i /usr/share/hamonikr/hamonikrwelcome/scripts/KakaoTalk.yml
+
+  else
+    # 설치 취소
+    exit 0;
+  fi
+fi

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-12 16:07+0900\n"
+"POT-Creation-Date: 2022-10-13 17:02+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,30 +17,34 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:128
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:133
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:1
 msgid "Welcome"
 msgstr ""
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:133
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:138
 msgid "First Steps"
 msgstr ""
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:137
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:142
+msgid "Second Steps"
+msgstr ""
+
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:147
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:5
 msgid "Documentation"
 msgstr ""
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:141
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:151
 msgid "Help"
 msgstr ""
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:145
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:155
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:2
 msgid "Contribute"
 msgstr ""
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:152
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:162
 msgid "Show this dialog at startup"
 msgstr ""
 
@@ -271,4 +275,28 @@ msgstr ""
 
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:44
 msgid "Have a great time and don't hesitate to send us your feedback."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:45
+msgid "Hancom-Office 2022 Beta"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:46
+msgid ""
+"Hancom-Office 2022 Beta Install Support. The license copyright is owned by "
+"Hancom. It can be end at any time."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:47
+msgid "Install"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:48
+msgid "KakaoTalk(Lutris)"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:49
+msgid ""
+"KakaoTalk can be used on Linux using a wine program. KakaoTalk does not "
+"officially support the Linux version, which can be unstable."
 msgstr ""

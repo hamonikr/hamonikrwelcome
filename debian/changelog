@@ -1,11 +1,21 @@
-hamonikrwelcome (1.0.1) jammy; urgency=medium
+hamonikrwelcome (1.0.2) taebaek; urgency=medium
+
+  * Add Hancom Office install
+  * Add KakaoTalk install from lutris
+  * Update Korean translation
+  * Fix HamoniKR Welcome logo
+
+ -- HamoniKR <pkg@hamonikr.org>  Thu, 13 Oct 2022 17:18:09 +0900
+
+
+hamonikrwelcome (1.0.1) taebaek; urgency=medium
 
   * Update Korean translation
 
  -- HamoniKR <pkg@hamonikr.org>  Mon, 10 Oct 2022 17:20:15 +0900
 
 
-hamonikrwelcome (1.0.0) jammy; urgency=medium
+hamonikrwelcome (1.0.0) taebaek; urgency=medium
 
   * Release for HamoniKR 6.0
 
