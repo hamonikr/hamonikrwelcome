@@ -1,7 +1,9 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=mintwelcome
+Name=Welcome
+Name[ko]=환영합니다
 Comment=HamoniKR Welcome Screen
+Comment[ko]=하모니카 환영합니다 화면
 Icon=hamonikrwelcome
 Exec=hamonikrwelcome-launcher
 Terminal=false
