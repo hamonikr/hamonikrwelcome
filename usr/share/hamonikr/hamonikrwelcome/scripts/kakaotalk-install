@@ -62,8 +62,9 @@ if [ ! -z "$CHECK" ]; then
 else
 
   if zenity --question --width 350 --text="$LUTRIS_INSTALL"; then
-    
-    sudo add-apt-repository -y ppa:lutris-team/lutris
+
+    # lutris PPA 저장소 없어짐(https://github.com/lutris/lutris/issues/4296)
+    apt-get update    
     xdg-open apt://lutris?refresh=yes
 
     sudo -u $RUID /usr/games/lutris -i /usr/share/hamonikr/hamonikrwelcome/scripts/KakaoTalk.yml

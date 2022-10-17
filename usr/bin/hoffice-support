@@ -93,7 +93,8 @@ if ((result==0)); then
     echo "Done"
     gdebi-gtk /tmp/hoffice_11.20.0.1520_amd64.deb
     # 한글 입력을 위한 nimf.so 파일 복사
-    if [ -d /opt/hnc/hoffice11 ]; then
+    if [ -f /opt/hnc/hoffice11/Bin/qt/plugins/platforminputcontexts/libqt5im-nimf.so ]; then
+        rm -r /opt/hnc/hoffice11/Bin/qt/plugins/platforminputcontexts/libqt5im-nimf.so
         cp -r /usr/share/hamonikr/hamonikrwelcome/scripts/libqt5im-nimf.so /opt/hnc/hoffice11/Bin/qt/plugins/platforminputcontexts/libqt5im-nimf.so
     fi    
     rm /tmp/hoffice_*

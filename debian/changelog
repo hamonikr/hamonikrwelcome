@@ -1,3 +1,11 @@
+hamonikrwelcome (1.0.3) taebaek; urgency=medium
+
+  * Fix copy libqt5im-nimf.so
+  * Fix lutris install
+    - PPA repo is deleted.
+
+ -- HamoniKR <pkg@hamonikr.org>  Mon, 17 Oct 2022 13:27:40 +0900
+
 hamonikrwelcome (1.0.2) taebaek; urgency=medium
 
   * Add Hancom Office install
