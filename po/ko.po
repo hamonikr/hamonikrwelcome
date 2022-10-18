@@ -30,11 +30,11 @@ msgstr "추천 프로그램"
 #: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:147
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:5
 msgid "Documentation"
-msgstr "서류 작업"
+msgstr "관련 문서"
 
 #: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:151
 msgid "Help"
-msgstr "도움말"
+msgstr "함께하기"
 
 #: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:155
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:2
