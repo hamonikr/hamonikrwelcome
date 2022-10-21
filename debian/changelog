@@ -1,3 +1,12 @@
+hamonikrwelcome (1.0.5) taebaek; urgency=medium
+
+  [Kevin]
+  * Changed install process with zenity 
+   - Causes gdebi working very slow
+   - Add polickit policy
+
+ -- HamoniKR <pkg@hamonikr.org>  Sat, 22 Oct 2022 01:13:57 +0900
+
 hamonikrwelcome (1.0.4) taebaek; urgency=medium
 
   * Update translation

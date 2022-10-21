@@ -17,4 +17,16 @@
     <annotate key="org.freedesktop.policykit.exec.allow_gui">TRUE</annotate>
   </action>
 
+  <action id="org.freedesktop.policykit.pkexec.hoffice-install">
+    <description>Run hoffice-install</description>
+    <message>Authentication is required to run hoffice-install</message>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/share/hamonikr/hamonikrwelcome/scripts/hoffice-install</annotate>
+    <annotate key="org.freedesktop.policykit.exec.allow_gui">TRUE</annotate>
+  </action>
+
 </policyconfig>
