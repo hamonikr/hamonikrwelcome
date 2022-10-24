@@ -6,11 +6,13 @@ runner: wine
 
 script:
   files:
-  - kakaotalk_download_sh: http://pkg.hamonikr.org/download.sh
+  - setup:
+      filename: KakaoTalk_Setup.exe
+      url: https://app-pc.kakaocdn.net/talk/win32/KakaoTalk_Setup.exe
   game:
-    exe: $GAMEDIR/drive_c/Program Files/Kakao/KakaoTalk/KakaoTalk.exe
-    prefix: $GAMEDIR
-    arch: win32
+      arch: win32
+      exe: $GAMEDIR/drive_c/Program Files/Kakao/KakaoTalk/KakaoTalk.exe
+      prefix: $GAMEDIR
   installer:
   - task:
       arch: win32
@@ -20,22 +22,26 @@ script:
       name: create_prefix
       prefix: $GAMEDIR
   - task:
+      arch: win32
+      description: Set Windows regestry
       name: set_regedit
       path: HKEY_CURRENT_USER\Software\Wine\X11 Driver
       key: inputStyle
       value: root
       type: REG_SZ
-  - chmodx: kakaotalk_download_sh
-  - execute:
-      args: $CACHE/KakaoTalk_Setup.exe
-      description: Downloading and renaming the installer
-      file: kakaotalk_download_sh
-      terminal: false
+  - task:
+      arch: win32
+      description: Setting Windows 10 mode for Wine
+      key: Version
+      name: set_regedit
+      path: HKEY_CURRENT_USER\Software\Wine
+      prefix: $GAMEDIR
+      value: win10
   - task:
       arch: win32
       args: /ALLUSERS /VERYSILENT
       description: Launching the Setup in Silent Mode
-      executable: $CACHE/KakaoTalk_Setup.exe
+      executable: setup
       name: wineexec
       prefix: $GAMEDIR
   - task:

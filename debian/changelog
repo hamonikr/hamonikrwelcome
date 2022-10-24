@@ -1,3 +1,11 @@
+hamonikrwelcome (1.0.6) taebaek; urgency=medium
+
+  [JamesBae]
+  * Fix KakaoTalk yml files
+   - Add lutris_kakaotalk image (desktop icon image)
+
+ -- HamoniKR <pkg@hamonikr.org>  Mon, 24 Oct 2022 16:37:07 +0900
+
 hamonikrwelcome (1.0.5) taebaek; urgency=medium
 
   [Kevin]
