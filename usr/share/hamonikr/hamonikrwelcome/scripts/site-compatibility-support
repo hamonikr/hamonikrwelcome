@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# download hancomoffice
+
+RUID=$(who | awk 'FNR == 1 {print $1}')
+
+ # 중복 실행 방지
+if [ -f /tmp/scsworking ]; then
+  zenity --info --width 200 --text "인스톨러가 실행중입니다.\n중간에 종료했을 경우\n제거 후 다시 설치해주세요."
+  exit 0
+else
+  touch /tmp/scsworking
+fi
+
+# 강제 종료 되거나 작업 완료 되었을때 진행
+trap 'rm /tmp/scsworking' EXIT
+
+if [ -f /home/$RUID/.hamonikr/scsinstalled  ]; then
+    zenity --info --width 200 --text "이미 설치되어 있습니다."
+    exit 0
+else
+
+ 
+
+  # 인터넷 연결상태 확인
+  nslookup www.google.com | grep authoritative > /dev/null 2>&1
+  if [[ $? != 0 ]]; then
+      zenity --info --width 200 --text "인터넷 연결상태를 확인해주세요"
+      exit 0
+  fi
+
+  sed -i 's/NoDisplay=true/NoDisplay=false/g' /usr/share/applications/site-compatibility-support-remove.desktop
+
+gnome-terminal --wait -- /bin/bash -c "RUID=$(who | awk 'FNR == 1 {print $1}'); \
+echo '설치를 시작합니다 잠시만 기다려주세요.'; sleep 3; apt update; mkdir /var/lib/update-notifier; \
+wget http://update.hamonikr.org/site-compatibility-support.tar.xz -O /tmp/site-compatibility-support.tar.xz; \
+tar -xvf /tmp/site-compatibility-support.tar.xz -C /tmp/; \
+sudo apt install -y /tmp/site-compatibility-support/*.deb; \
+touch /home/$RUID/.hamonikr/scsinstalled; \
+echo '설치가 완료되었습니다. 재부팅이 필요합니다. 자동으로 창이 닫힙니다.'; sleep 3; exit 0; read"
+
+  # 부팅 autostart 파일 복사와 권한 변경
+  cp -r /tmp/site-compatibility-support/autostart/*.desktop /home/$RUID/.config/autostart/
+  chown $RUID:$RUID /home/$RUID/.config/autostart/*.desktop
+
+
+fi

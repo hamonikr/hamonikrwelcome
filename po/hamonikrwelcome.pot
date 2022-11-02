@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-13 17:02+0900\n"
+"POT-Creation-Date: 2022-11-02 18:26+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -299,4 +299,14 @@ msgstr ""
 msgid ""
 "KakaoTalk can be used on Linux using a wine program. KakaoTalk does not "
 "officially support the Linux version, which can be unstable."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:50
+msgid "Site-Compatibility-Support"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:51
+msgid ""
+"It supports public institutions and banks in Korea to use public "
+"certificates. Reboot is required after installation."
 msgstr ""

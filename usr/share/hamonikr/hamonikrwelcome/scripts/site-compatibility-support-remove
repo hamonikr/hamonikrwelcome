@@ -1,0 +1,33 @@
+#!/bin/bash
+
+RUID=$(who | awk 'FNR == 1 {print $1}')
+echo "$RUID"
+
+if [ -f "/home/$RUID/.hamonikr/scsinstalled" ]; then
+
+  echo "삭제를 시작합니다 잠시만 기다려주세요."
+
+  sleep 3
+
+  apt purge -y ahnlab-safe-transaction delfino-g3
+  apt autoremove -y
+
+  sed -i 's/NoDisplay=false/NoDisplay=true/g' /usr/share/applications/site-compatibility-support-remove.desktop
+  rm -r /tmp/scsworking
+  rm -r /home/$RUID/.hamonikr/scsinstalled
+
+  echo "삭제가 완료되었습니다. 자동으로 창이 닫힙니다."
+
+  sleep 3
+
+  exit 0
+
+else
+
+  zenity --info --width 200 --text "제거할 패키지가 존재하지 않습니다."
+
+  sed -i 's/NoDisplay=false/NoDisplay=true/g' /usr/share/applications/site-compatibility-support-remove.desktop
+  rm -r /tmp/scsworking
+  rm -r /home/$RUID/.hamonikr/scsinstalled
+
+fi

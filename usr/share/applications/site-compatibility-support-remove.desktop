@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=site-compatibility-support-remove
+Name[ko]=사이트 호환성 패키지 제거
+Comment=site-compatibility-support-remove
+Comment[ko]=사이트 호환성 패키지 제거
+Icon=site-compatibility-support_default
+Exec=site-compatibility-support-remove
+Terminal=true
+NoDisplay=true

@@ -88,6 +88,7 @@ class HamonikrWelcome():
         # Custom recommended software
         builder.get_object("button_hancom").connect("clicked", self.launch, "hoffice-support")
         builder.get_object("button_kakaotalk").connect("clicked", self.launch, "kakaotalk-install")
+        builder.get_object("button_site_compatibility_support").connect("clicked", self.launch, "site-compatibility-support")
 
         # Settings button depends on DE
         de_is_cinnamon = False

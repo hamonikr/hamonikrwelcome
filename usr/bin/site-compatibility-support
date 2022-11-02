@@ -1,0 +1,3 @@
+#!/bin/bash
+
+pkexec "/usr/share/hamonikr/hamonikrwelcome/scripts/site-compatibility-support" "$@"

@@ -1,3 +1,11 @@
+hamonikrwelcome (1.0.9) taebaek; urgency=medium
+
+  [JamesBae]
+  * Add site-compatibility-support
+   - 국민은행
+
+ -- HamoniKR <pkg@hamonikr.org>  Wed, 02 Nov 2022 18:23:23 +0900
+
 hamonikrwelcome (1.0.8) taebaek; urgency=medium
 
   [JamesBae]

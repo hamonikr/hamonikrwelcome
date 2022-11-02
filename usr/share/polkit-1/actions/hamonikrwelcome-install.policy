@@ -33,4 +33,32 @@
     <annotate key="org.freedesktop.policykit.exec.allow_gui">TRUE</annotate>
   </action>
 
+  <action id="org.freedesktop.policykit.pkexec.site-compatibility-support">
+    <description>Run site-compatibility-support</description>
+    <message>Authentication is required to run site-compatibility-support</message>
+    <message xml:lang="ko">사이트 호환성 설치를 실행하려면 인증이 필요합니다.</message>
+    <icon_name>site-compatibility-support_default</icon_name>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/share/hamonikr/hamonikrwelcome/scripts/site-compatibility-support</annotate>
+    <annotate key="org.freedesktop.policykit.exec.allow_gui">TRUE</annotate>
+  </action>
+
+  <action id="org.freedesktop.policykit.pkexec.site-compatibility-support-remove">
+    <description>Run site-compatibility-support-remove</description>
+    <message>Authentication is required to run site-compatibility-support-remove</message>
+    <message>사이트 호환성 제거를 실행하려면 인증이 필요합니다.</message>
+    <icon_name>site-compatibility-support_default</icon_name>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>no</allow_inactive>
+      <allow_active>auth_admin_keep</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/share/hamonikr/hamonikrwelcome/scripts/site-compatibility-support-remove</annotate>
+    <annotate key="org.freedesktop.policykit.exec.allow_gui">TRUE</annotate>
+  </action>
+
 </policyconfig>
