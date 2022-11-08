@@ -240,9 +240,9 @@ class HamonikrWelcome():
     def on_button_layout_clicked (self, button, style):
         # HamoniKR themes change
         if style == LAYOUT_STYLE_LEGACY:
-            os.system("hamonikr-theme-setting restore && hamonikr-theme-setting winstyle")
+            os.system("rm ~/.hamonikr/theme/hamonikr-theme-setting.done && hamonikr-theme-setting winstyle")
         elif style == LAYOUT_STYLE_NEW:
-            os.system("hamonikr-theme-setting restore && sleep 1 && hamonikr-theme-setting macstyle")
+            os.system("rm ~/.hamonikr/theme/hamonikr-theme-setting.done && hamonikr-theme-setting macstyle")
         os.system("cinnamon --replace &")
 
     def on_dark_mode_changed(self, button, state):

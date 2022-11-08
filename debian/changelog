@@ -1,3 +1,11 @@
+hamonikrwelcome (1.1.1) taebaek; urgency=medium
+
+  [JamesBae]
+  * Update change panel layout
+   - fast changing
+
+ -- HamoniKR <pkg@hamonikr.org>  Tue, 08 Nov 2022 15:09:33 +0900
+
 hamonikrwelcome (1.1.0) taebaek; urgency=medium
 
   [JamesBae]
