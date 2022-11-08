@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: hamonikrwelcome\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-08 13:21+0900\n"
+"POT-Creation-Date: 2022-11-08 14:24+0900\n"
 "PO-Revision-Date: 2022-10-10 16:36+0900\n"
 "Last-Translator: Kevin Kim <root@hamonikr.org>\n"
 "Language-Team: HamoniKR <pkg@hamonikr.org>\n"
@@ -14,38 +14,38 @@ msgstr ""
 "X-Generator: Poedit 2.3\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:152
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:153
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:1
 msgid "Welcome"
 msgstr "반갑습니다"
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:157
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:158
 msgid "First Steps"
 msgstr "첫 번째 단계"
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:161
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:162
 msgid "Second Steps"
 msgstr "추천 프로그램"
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:165
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:166
 msgid "Third Steps"
 msgstr "개발자용 프로그램"
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:169
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:170
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:5
 msgid "Documentation"
 msgstr "관련 문서"
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:173
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:174
 msgid "Help"
 msgstr "함께하기"
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:177
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:178
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:2
 msgid "Contribute"
 msgstr "기여"
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:184
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:185
 msgid "Show this dialog at startup"
 msgstr "시작할 때 이 창을 보여줌"
 
@@ -289,8 +289,8 @@ msgstr ""
 "락하세요."
 
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:40
-msgid "Development Language"
-msgstr "Development Language"
+msgid "Welcome to HamoniKR"
+msgstr "환영합니다"
 
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:41
 msgid "Welcome to your new operating system!"
@@ -377,24 +377,28 @@ msgid "Korean Language"
 msgstr "한국어 설정"
 
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:55
+msgid "Development Language"
+msgstr "Development Language"
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:56
 msgid ""
 "Install packages related to the development language and proceed with "
 "additional settings."
 msgstr "개발 언어와 관련된 패키지를 설치하고 추가 설정을 진행합니다."
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:56
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:57
 msgid "Default-JDK"
 msgstr "Default-JDK"
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:57
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:58
 msgid "Standard Java or Java compatible Development Kit"
 msgstr "표준 자바 또는 자바 호환 개발 키트 입니다."
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:58
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:59
 msgid "Python-pip"
 msgstr "Python-pip"
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:59
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:60
 msgid ""
 "python3.8 is already installed in the HamoniKR. However, you need to make "
 "addiional settings to use the pip command at the terminal. We recommend "
@@ -403,19 +407,19 @@ msgstr ""
 "파이썬 3.8은 이미 하모니카에 설치되어 있습니다. 하지만 터미널에서 pip 명령을 "
 "사용하려면 추가 설치를 해야 합니다. IDE 도구 사용을 권장합니다."
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:60
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:61
 msgid "WEB/WAS"
 msgstr "WEB/WAS"
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:61
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:62
 msgid "Try to build WEB and WAS servers for web services."
 msgstr "웹 서비스를 위한 WEB, WAS 서버 구축을 해보세요."
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:62
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:63
 msgid "Apache"
 msgstr "아파치"
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:63
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:64
 msgid ""
 "The Apache HTTP Server, colloquially called Apache is a free and open-source "
 "cross-platform web server software, released under the terms of Apache "
@@ -424,11 +428,11 @@ msgstr ""
 "아파치 HTTP 서버는 아파치 라이선스 2.0의 조항에 따라 출시된 자유-오픈 소스 크"
 "로스 플랫폼 웹 서버 소프트웨어 입니다. 웹 환경을 구축하기 위해 필요합니다."
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:64
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:65
 msgid "Tomcat"
 msgstr "톰캣"
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:65
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:66
 msgid ""
 "Apache Tomcat is a web application server with only servlet containers "
 "developed by the Apache Software Foundation."
@@ -436,93 +440,93 @@ msgstr ""
 "아파치 톰캣은 아파치 소프트웨어 재단에서 개발한 서블릿 컨테이너만 있는 웹 애"
 "플리케이션 서버입니다."
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:66
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:67
 msgid "Editor(IDE)"
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:67
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:68
 msgid "It is an integrated development environment tool."
 msgstr "통합 개발 환경 도구 입니다."
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:68
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:69
 msgid "Visual Studio Code"
 msgstr "비주얼 스튜디오 코드"
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:69
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:70
 msgid ""
 "Visual Studio Code is a source-code editor that can be used with a variety "
 "of programming languages."
 msgstr ""
-"비주얼 스튜디오 코드는 다양한 프로그래밍 언어와 함께 사용할 수 있는 "
-"소스 코드 편집기 입니다."
+"비주얼 스튜디오 코드는 다양한 프로그래밍 언어와 함께 사용할 수 있는 소스 코"
+"드 편집기 입니다."
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:70
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:71
 msgid "DBMS"
 msgstr "DBMS"
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:71
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:72
 msgid "It is a database management system."
 msgstr "데이터 베이스 관리 시스템 입니다."
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:72
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:73
 msgid "MySQL"
 msgstr "MySQL"
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:73
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:74
 msgid "MySQL is an open-source relational database management system (RDBMS)."
 msgstr "MySQL은 오픈 소스 관계형 데이터베이스 관리 시스템 입니다. (RDBMS)"
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:74
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:75
 msgid "PostgreSQL"
 msgstr "PostgreSQL"
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:75
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:76
 msgid ""
 "PostgreSQL also known as Postgres, is a free and open-source relational "
 "database management system (RDBMS) emphasizing extensibility and SQL "
 "compliance."
 msgstr ""
-"PostgreSQL은 확장성과 SQL 표준 준수를 강조하는 자유-오픈 소스 관계형 데이터베이스 "
-"관리 시스템 입니다. (RDBMS)"
+"PostgreSQL은 확장성과 SQL 표준 준수를 강조하는 자유-오픈 소스 관계형 데이터베"
+"이스 관리 시스템 입니다. (RDBMS)"
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:76
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:77
 msgid "Etc.."
 msgstr "기타.."
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:77
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:78
 msgid "These are very useful tools that can be used for development."
 msgstr "개발할 때 사용할 수 있는 매우 유용한 추가 도구 입니다."
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:78
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:79
 msgid "Asbru-cm (SSH Client)"
 msgstr "SSH 클라이언트"
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:79
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:80
 msgid ""
 "Asbru Connection Manager is a user interface that helps organizing remote "
 "terminal sessions and automating repetitive tasks."
 msgstr ""
-"Asbru 연결 관리자는 원격 터미널 세션을 구성하고 반복 작업을 자동화하는데 "
-"도움을 주는 프로그램입니다."
+"Asbru 연결 관리자는 원격 터미널 세션을 구성하고 반복 작업을 자동화하는데 도움"
+"을 주는 프로그램입니다."
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:80
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:81
 msgid "git"
 msgstr "깃"
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:81
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:82
 msgid ""
 "Git is software for tracking changes in any set of files, usually used for "
 "coordinating work among programmers collaboratively developing source code "
 "during software development."
 msgstr ""
-"깃은 소프트웨어 개발 중에 소스 코드를 공동으로 개발하는 프로그래머들 간의 작업을 "
-"조정하기 위해 사용되는 파일 집합의 변경을 추적하는 소프트웨어 입니다."
+"깃은 소프트웨어 개발 중에 소스 코드를 공동으로 개발하는 프로그래머들 간의 작"
+"업을 조정하기 위해 사용되는 파일 집합의 변경을 추적하는 소프트웨어 입니다."
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:82
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:83
 msgid "rabbitvcs-nemo"
 msgstr "rabbitvcs-nemo"
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:83
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:84
 msgid ""
 "Rabbitvcs is a tool that helps you manage versions of projects such as git. "
 "This software enables rabbitvcs in nemo file browser."
@@ -530,22 +534,19 @@ msgstr ""
 "Rabbitvcs는 git과 같은 프로젝트의 버전을 관리할 수 있게 도와주는 도구입니다. "
 "이 소프트웨어는 니모 파일 브라우저에서 rabbitvcs를 사용할 수 있게 합니다"
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:84
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:85
 msgid "Avahi Service"
 msgstr "Avahi Service"
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:85
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:86
 msgid ""
 "Avahi is a system which enables programs to publish and discover services "
 "and hosts running on a local network. This package is a package that enables "
 "clients to browse services even if they do not know IP."
 msgstr ""
-"Avahi는 프로그램이 로컬 네트워크에서 실행되는 서비스와 호스트를 게시하고 "
-"검색할 수 있도록 하는 시스템 입니다. 이 패키지는 클라이언트가 IP를 모르더라도 "
-"서비스를 찾아 볼 수 있습니다."
-
-#~ msgid "Welcome to HamoniKR"
-#~ msgstr "환영합니다"
+"Avahi는 프로그램이 로컬 네트워크에서 실행되는 서비스와 호스트를 게시하고 검색"
+"할 수 있도록 하는 시스템 입니다. 이 패키지는 클라이언트가 IP를 모르더라도 서"
+"비스를 찾아 볼 수 있습니다."
 
 #~ msgid "A large panel with grouped windows and a small system tray."
 #~ msgstr "그룹화된 창과 작은 시스템 트레이가 있는 큰 패널."
