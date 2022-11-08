@@ -1,3 +1,0 @@
-#!/bin/bash
-
-pkexec "/usr/share/hamonikr/hamonikrwelcome/scripts/kakaotalk-install" "$@"

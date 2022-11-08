@@ -85,10 +85,30 @@ class HamonikrWelcome():
         builder.get_object("button_layout_legacy").connect("clicked", self.on_button_layout_clicked, LAYOUT_STYLE_LEGACY)
         builder.get_object("button_layout_new").connect("clicked", self.on_button_layout_clicked, LAYOUT_STYLE_NEW)
 
-        # Custom recommended software
-        builder.get_object("button_hancom").connect("clicked", self.launch, "hoffice-support")
-        builder.get_object("button_kakaotalk").connect("clicked", self.launch, "kakaotalk-install")
-        builder.get_object("button_site_compatibility_support").connect("clicked", self.launch, "site-compatibility-support")
+        # Custom Second Step (recommended software)
+        builder.get_object("button_hancom").connect("clicked", self.pkexec, "/usr/share/hamonikr/hamonikrwelcome/scripts/hoffice-install")
+        builder.get_object("button_kakaotalk").connect("clicked", self.pkexec, "/usr/share/hamonikr/hamonikrwelcome/scripts/kakaotalk-install")
+        builder.get_object("button_site_compatibility_support").connect("clicked", self.pkexec, "/usr/share/hamonikr/hamonikrwelcome/scripts/site-compatibility-support")
+        builder.get_object("button_kodi").connect("clicked", self.pkexec, "/usr/share/hamonikr/hamonikrwelcome/scripts/kodi-install")
+        builder.get_object("button_korean_language").connect("clicked", self.on_button_korean_language)
+        
+        # Custom Third Step (development software)
+            # Development Language
+        builder.get_object("button_default_jdk").connect("clicked", self.visit, "apt://default-jdk?refresh=yes")
+        builder.get_object("button_python_pip").connect("clicked", self.visit, "apt://python3-pip?refresh=yes")
+            # WEB/WAS
+        builder.get_object("button_apache").connect("clicked", self.visit, "apt://apache2?refresh=yes")
+        builder.get_object("button_tomcat").connect("clicked", self.visit, "apt://tomcat9?refresh=yes")
+            # Editor (IDE)
+        builder.get_object("button_vscode").connect("clicked", self.pkexec, "/usr/share/hamonikr/hamonikrwelcome/scripts/vscode-install")
+            # DBMS
+        builder.get_object("button_mysql").connect("clicked", self.visit, "apt://mysql-server?refresh=yes")
+        builder.get_object("button_postgresql").connect("clicked", self.visit, "apt://postgresql?refresh=yes")
+            # etc
+        builder.get_object("button_asbru").connect("clicked", self.visit, "apt://asbru-cm?refresh=yes")
+        builder.get_object("button_git").connect("clicked", self.visit, "apt://git?refresh=yes")
+        builder.get_object("button_rabbitvcs").connect("clicked", self.visit, "apt://hamonikr-nemo-rabbitvcs?refresh=yes")
+        builder.get_object("button_avahi").connect("clicked", self.visit, "apt://hamonikr-avahi-service?refresh=yes")
 
         # Settings button depends on DE
         de_is_cinnamon = False
@@ -141,6 +161,9 @@ class HamonikrWelcome():
         self.stack.add_named(page, "page_second_steps")
         list_box.add(SidebarRow(page, _("Second Steps"), "dialog-information-symbolic"))
 
+        page = builder.get_object("page_third_steps")
+        self.stack.add_named(page, "page_third_steps")
+        list_box.add(SidebarRow(page, _("Third Steps"), "dialog-information-symbolic"))
 
         page = builder.get_object("page_documentation")
         self.stack.add_named(page, "page_documentation")
@@ -293,6 +316,9 @@ class HamonikrWelcome():
 
     def pkexec(self, button, command):
         subprocess.Popen(["pkexec", command])
+
+    def on_button_korean_language (self, button):
+        os.system("sh -c /usr/share/hamonikr/hamonikrwelcome/scripts/kodi_korean_support")
 
 if __name__ == "__main__":
     HamonikrWelcome()

@@ -1,0 +1,51 @@
+#!/bin/bash
+
+case $LANG in
+  ko*)
+    INSTALLER="인스톨러가 실행중입니다."
+    CHECK_INTERNET="인터넷 연결상태를 확인해주세요."
+  ;;
+  *)
+    INSTALLER="The installer is running."
+    CHECK_INTERNET="Please check the internet connection status."
+  ;;
+esac
+
+RUID=$(who | awk 'FNR == 1 {print $1}')
+echo "$RUID"
+
+# 인터넷 연결상태 확인
+nslookup www.google.com | grep authoritative > /dev/null 2>&1
+if [[ $? != 0 ]]; then
+    zenity --info --width 200 --text "$CHECK_INTERNET"
+    exit 0
+fi
+
+# 중복 실행 방지
+if [ -f /tmp/vscodeworking ]; then
+    zenity --info --width 200 --text "$INSTALLER"
+    exit 0
+else
+    touch /tmp/vscodeworking
+fi
+
+# 강제 종료 되거나 작업 완료 되었을때 진행
+trap 'rm /tmp/vscodeworking' EXIT
+
+# kodi 설치 확인
+CHECK=$(dpkg --get-selections code 2>&1 | grep install)
+
+if [ ! -z "$CHECK" ]; then
+    xdg-open apt://code?refresh=yes
+else
+    if [ ! -f "/etc/apt/sources.list.d/vscode.list" ]; then
+        echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
+        if [ ! -f /etc/apt/tristed.gpg.d/packages.microsoft.gpg ]; then
+            wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /tmp/packages.microsoft.gpg
+            install -D -o root -g root -m 644 /tmp/packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+            rm /tmp/packages.microsoft.gpg
+        fi
+    fi
+    apt update
+    xdg-open apt://code?refresh=yes
+fi

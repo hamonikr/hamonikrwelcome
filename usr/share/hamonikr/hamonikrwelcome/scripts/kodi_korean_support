@@ -1,0 +1,14 @@
+#!/bin/bash
+
+RUID=$(who | awk 'FNR == 1 {print $1}')
+
+INSTALL=$(dpkg --get-selections kodi | grep -v "deinstall")
+
+if [ ! -z  $INSALL ]; then
+	zenity --info --width 200 --text "코디를 먼저 설치해주세요"
+	exit 0
+fi
+
+tar -xvf /usr/share/hamonikr/hamonikrwelcome/scripts/kodi.tar.xz -C /home/$RUID/
+
+zenity --info --width 200 --text "설치가 완료되었습니다."

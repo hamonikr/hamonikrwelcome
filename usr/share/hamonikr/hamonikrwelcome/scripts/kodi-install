@@ -1,0 +1,50 @@
+#!/bin/bash
+
+case $LANG in
+  ko*)
+    INSTALLER="인스톨러가 실행중입니다."
+    CHECK_INTERNET="인터넷 연결상태를 확인해주세요."
+  ;;
+  *)
+    INSTALLER="The installer is running."
+    CHECK_INTERNET="Please check the internet connection status."
+  ;;
+esac
+
+RUID=$(who | awk 'FNR == 1 {print $1}')
+echo "$RUID"
+
+# 인터넷 연결상태 확인
+nslookup www.google.com | grep authoritative > /dev/null 2>&1
+if [[ $? != 0 ]]; then
+    zenity --info --width 200 --text "$CHECK_INTERNET"
+    exit 0
+fi
+
+# 중복 실행 방지
+if [ -f /tmp/kodiworking ]; then
+    zenity --info --width 200 --text "$INSTALLER"
+    exit 0
+else
+    touch /tmp/kodiworking
+fi
+
+# 강제 종료 되거나 작업 완료 되었을때 진행
+trap 'rm /tmp/kodiworking' EXIT
+
+# kodi 설치 확인
+CHECK=$(dpkg --get-selections kodi 2>&1 | grep install)
+
+if [ ! -z "$CHECK" ]; then
+    xdg-open apt://kodi?refresh=yes
+else
+    if [ ! -f "/etc/apt/sources.list.d/team-xbmc-ppa-focal.list" ]; then
+        echo "deb [arch=amd64] http://ppa.launchpad.net/team-xbmc/ppa/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/team-xbmc-ppa-focal.list
+        if [ ! -f /etc/apt/tristed.gpg.d/xmbc.gpg ]; then
+            apt-key adv --recv-keys --keyserver keyserver.ubuntu.com 91E7EE5E
+            apt-key export 91E7EE5E | sudo gpg --dearmour -o /etc/apt/trusted.gpg.d/xbmc.gpg
+        fi
+    fi
+    apt update
+    xdg-open apt://kodi?refresh=yes
+fi

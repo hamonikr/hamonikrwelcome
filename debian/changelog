@@ -1,3 +1,11 @@
+hamonikrwelcome (1.1.0) taebaek; urgency=medium
+
+  [JamesBae]
+  * Add Install Program & icon image
+   - kodi, default-jdk, python-pip, apache, tomcat, code, mysql-server, postgresql, asbru-cm, git, hamonikr-nemo-rabbitvcs, hamonikr-avahi-service
+
+ -- HamoniKR <pkg@hamonikr.org>  Tue, 08 Nov 2022 14:07:50 +0900
+
 hamonikrwelcome (1.0.9) taebaek; urgency=medium
 
   [JamesBae]
