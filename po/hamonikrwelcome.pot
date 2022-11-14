@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-08 14:24+0900\n"
+"POT-Creation-Date: 2022-11-14 14:44+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,38 +17,38 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:153
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:156
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:1
 msgid "Welcome"
 msgstr ""
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:158
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:161
 msgid "First Steps"
 msgstr ""
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:162
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:165
 msgid "Second Steps"
 msgstr ""
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:166
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:169
 msgid "Third Steps"
 msgstr ""
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:170
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:173
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:5
 msgid "Documentation"
 msgstr ""
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:174
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:177
 msgid "Help"
 msgstr ""
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:178
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:181
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:2
 msgid "Contribute"
 msgstr ""
 
-#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:185
+#: ../usr/lib/hamonikr/hamonikrwelcome/hamonikrwelcome.py:188
 msgid "Show this dialog at startup"
 msgstr ""
 
@@ -306,176 +306,206 @@ msgid ""
 msgstr ""
 
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:50
-msgid "Site-Compatibility-Support"
+msgid "Alzip"
 msgstr ""
 
 #: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:51
+msgid ""
+"Alzip can compress and decompress files. It also supports a dedicated "
+"compression EGG format."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:52
+msgid "ALYAC"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:53
+msgid ""
+"ALYac is a total security program which securely protects your system by "
+"scanning and cleaning viruses and malware, through real-time scanning "
+"features. It's free for individual users. Download it, check the manual, and "
+"install it. instructions."
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:54
+msgid "Download"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:55
+msgid "manual"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:56
+msgid "Site-Compatibility-Support"
+msgstr ""
+
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:57
 msgid ""
 "It supports public institutions and banks in Korea to use public "
 "certificates. Reboot is required after installation."
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:52
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:58
 msgid "KODI"
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:53
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:59
 msgid ""
 "Kodi is a free and open-source media player software application developed "
 "by the XBMC Foundation, a non-profit technology consortium."
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:54
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:60
 msgid "Korean Language"
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:55
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:61
 msgid "Development Language"
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:56
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:62
 msgid ""
 "Install packages related to the development language and proceed with "
 "additional settings."
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:57
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:63
 msgid "Default-JDK"
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:58
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:64
 msgid "Standard Java or Java compatible Development Kit"
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:59
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:65
 msgid "Python-pip"
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:60
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:66
 msgid ""
 "python3.8 is already installed in the HamoniKR. However, you need to make "
 "addiional settings to use the pip command at the terminal. We recommend "
 "using the IDE tool."
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:61
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:67
 msgid "WEB/WAS"
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:62
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:68
 msgid "Try to build WEB and WAS servers for web services."
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:63
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:69
 msgid "Apache"
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:64
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:70
 msgid ""
 "The Apache HTTP Server, colloquially called Apache is a free and open-source "
 "cross-platform web server software, released under the terms of Apache "
 "License 2.0."
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:65
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:71
 msgid "Tomcat"
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:66
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:72
 msgid ""
 "Apache Tomcat is a web application server with only servlet containers "
 "developed by the Apache Software Foundation."
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:67
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:73
 msgid "Editor(IDE)"
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:68
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:74
 msgid "It is an integrated development environment tool."
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:69
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:75
 msgid "Visual Studio Code"
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:70
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:76
 msgid ""
 "Visual Studio Code is a source-code editor that can be used with a variety "
 "of programming languages."
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:71
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:77
 msgid "DBMS"
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:72
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:78
 msgid "It is a database management system."
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:73
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:79
 msgid "MySQL"
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:74
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:80
 msgid "MySQL is an open-source relational database management system (RDBMS)."
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:75
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:81
 msgid "PostgreSQL"
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:76
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:82
 msgid ""
 "PostgreSQL also known as Postgres, is a free and open-source relational "
 "database management system (RDBMS) emphasizing extensibility and SQL "
 "compliance."
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:77
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:83
 msgid "Etc.."
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:78
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:84
 msgid "These are very useful tools that can be used for development."
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:79
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:85
 msgid "Asbru-cm (SSH Client)"
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:80
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:86
 msgid ""
 "Asbru Connection Manager is a user interface that helps organizing remote "
 "terminal sessions and automating repetitive tasks."
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:81
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:87
 msgid "git"
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:82
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:88
 msgid ""
 "Git is software for tracking changes in any set of files, usually used for "
 "coordinating work among programmers collaboratively developing source code "
 "during software development."
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:83
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:89
 msgid "rabbitvcs-nemo"
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:84
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:90
 msgid ""
 "Rabbitvcs is a tool that helps you manage versions of projects such as git. "
 "This software enables rabbitvcs in nemo file browser."
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:85
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:91
 msgid "Avahi Service"
 msgstr ""
 
-#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:86
+#: ../usr/share/hamonikr/hamonikrwelcome/hamonikrwelcome.ui.h:92
 msgid ""
 "Avahi is a system which enables programs to publish and discover services "
 "and hosts running on a local network. This package is a package that enables "

@@ -88,6 +88,9 @@ class HamonikrWelcome():
         # Custom Second Step (recommended software)
         builder.get_object("button_hancom").connect("clicked", self.pkexec, "/usr/share/hamonikr/hamonikrwelcome/scripts/hoffice-install")
         builder.get_object("button_kakaotalk").connect("clicked", self.pkexec, "/usr/share/hamonikr/hamonikrwelcome/scripts/kakaotalk-install")
+        builder.get_object("button_alzip").connect("clicked", self.visit, "apt://alzip?refresh=yes")
+        builder.get_object("button_alyac").connect("clicked", self.on_button_download_alyac)
+        builder.get_object("button_alyac_manual").connect("clicked", self.visit, "https://cdn1.estsecurity.com/manual/alyacvms1/alyacforopenos1-manual_ko.pdf")
         builder.get_object("button_site_compatibility_support").connect("clicked", self.pkexec, "/usr/share/hamonikr/hamonikrwelcome/scripts/site-compatibility-support")
         builder.get_object("button_kodi").connect("clicked", self.pkexec, "/usr/share/hamonikr/hamonikrwelcome/scripts/kodi-install")
         builder.get_object("button_korean_language").connect("clicked", self.on_button_korean_language)
@@ -319,6 +322,9 @@ class HamonikrWelcome():
 
     def on_button_korean_language (self, button):
         os.system("sh -c /usr/share/hamonikr/hamonikrwelcome/scripts/kodi_korean_support")
+
+    def on_button_download_alyac (self, button):
+        os.system("sh -c /usr/share/hamonikr/hamonikrwelcome/scripts/alyac-download")
 
 if __name__ == "__main__":
     HamonikrWelcome()

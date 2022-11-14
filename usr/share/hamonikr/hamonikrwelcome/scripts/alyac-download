@@ -1,0 +1,92 @@
+#!/bin/bash
+# download hancomoffice
+
+case $LANG in
+  ko*)
+    DOWNLOADING="다운로드가 진행중입니다."
+    CHECK_INTERNET="인터넷 연결상태를 확인해주세요."
+    FILE_DOWNLOAD_CHECK="다운로드 저장소에 문제가 있습니다."
+    OK_LABEL="다운로드 폴더 열기"
+    DOWN_TITLE="다운로드..."
+    DOWN_TEXT1="다운로드 중..."
+    DOWN_TEXT2="남은 시간..."
+  ;;
+  *)
+    DOWNLOADING="The download is in progress."
+    CHECK_INTERNET="Please check the internet connection status."
+    FILE_DOWNLOAD_CHECK="There is a problem with the download store."
+    OK_LABEL="Open Download Folder"
+    DOWN_TITLE="Download..."
+    DOWN_TEXT1="Download at..."
+    DOWN_TEXT2="time..."
+  ;;
+esac
+
+# 중복 실행 방지
+if [ -f /tmp/alyacworking ]; then
+    zenity --info --width=500 --text "$INSTALLER"
+    exit 0
+else
+    touch /tmp/alyacworking
+fi
+
+# 강제 종료 되거나 작업 완료 되었을때 진행
+trap 'rm /tmp/alyacworking' EXIT
+
+# 인터넷 연결상태 확인
+nslookup www.google.com | grep authoritative > /dev/null 2>&1
+if [[ $? != 0 ]]; then
+    zenity --info --width=500 --text "$CHECK_INTERNET"
+    exit 0
+fi
+
+# 동의 페이지
+# zenity --text-info --title="동의" --filename="/home/test/lsof.txt" --checkbox="Yes"
+# result=$?
+# if ((result==0)); then
+#   echo "OK"
+# else
+#   echo "NO"
+#   exit 0
+# fi
+
+# 파일 존재 유무 확인(원격지 저장소에 있는)
+REPO_CHECK=$(wget -S --spider https://update.hamonikr.org/thirdparty/alyac.install 2>&1 | grep "HTTP/1.1" | grep "200 OK")
+if [[ -z $REPO_CHECK ]]; then
+    zenity --info --width=500 --text "$FILE_DOWNLOAD_CHECK"
+    exit 0
+fi
+
+# 이전 파일이 있을 경우 제거
+if [ -f /tmp/alyacdown/alyac.install ]; then
+    rm -r /tmp/alyacdown/alyac.install
+fi
+
+mkdir -p /tmp/alyacdown
+
+wget -P /tmp/alyacdown https://update.hamonikr.org/thirdparty/alyac.install 2>&1 \
+ | sed -u "s/.* \([0-9]\+%\)\ \+\([0-9.]\+.\) \(.*\)/\1\n# $DOWN_TEXT1\2\/s, $DOWN_TEXT2\3/" \
+ | zenity --progress --width=500 --ok-label="$OK_LABEL" --title=$DOWN_TITLE
+
+result=$?
+
+chmod +x /tmp/alyacdown/alyac.install
+
+if ((result==0)); then
+    echo "Done"
+    
+    nemo /tmp/alyacdown &
+else
+    echo "Cancel"
+fi
+
+RUNNING=0
+while [ $RUNNING -eq 0 ]
+do
+    if [ -z "$(pidof zenity)" ]; then
+        pkill wget
+        RUNNING=1
+    fi
+done
+
+fi
