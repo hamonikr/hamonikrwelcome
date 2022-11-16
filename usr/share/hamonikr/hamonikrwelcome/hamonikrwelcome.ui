@@ -2826,26 +2826,6 @@
                               </packing>
                             </child>
                             <child>
-                              <object class="GtkLabel">
-                                <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                              </object>
-                              <packing>
-                                <property name="left_attach">1</property>
-                                <property name="top_attach">0</property>
-                              </packing>
-                            </child>
-                            <child>
-                              <object class="GtkLabel">
-                                <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                              </object>
-                              <packing>
-                                <property name="left_attach">4</property>
-                                <property name="top_attach">0</property>
-                              </packing>
-                            </child>
-                            <child>
                               <object class="GtkButton" id="button_alyac">
                                 <property name="label" translatable="yes">Download</property>
                                 <property name="visible">True</property>
@@ -2859,7 +2839,7 @@
                                 </style>
                               </object>
                               <packing>
-                                <property name="left_attach">2</property>
+                                <property name="left_attach">1</property>
                                 <property name="top_attach">0</property>
                               </packing>
                             </child>
@@ -2877,7 +2857,7 @@
                                 </style>
                               </object>
                               <packing>
-                                <property name="left_attach">3</property>
+                                <property name="left_attach">2</property>
                                 <property name="top_attach">0</property>
                               </packing>
                             </child>
@@ -3097,26 +3077,6 @@
                               </packing>
                             </child>
                             <child>
-                              <object class="GtkLabel">
-                                <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                              </object>
-                              <packing>
-                                <property name="left_attach">1</property>
-                                <property name="top_attach">0</property>
-                              </packing>
-                            </child>
-                            <child>
-                              <object class="GtkLabel">
-                                <property name="visible">True</property>
-                                <property name="can_focus">False</property>
-                              </object>
-                              <packing>
-                                <property name="left_attach">4</property>
-                                <property name="top_attach">0</property>
-                              </packing>
-                            </child>
-                            <child>
                               <object class="GtkButton" id="button_kodi">
                                 <property name="label" translatable="yes">Install</property>
                                 <property name="visible">True</property>
@@ -3130,7 +3090,7 @@
                                 </style>
                               </object>
                               <packing>
-                                <property name="left_attach">2</property>
+                                <property name="left_attach">1</property>
                                 <property name="top_attach">0</property>
                               </packing>
                             </child>
@@ -3148,7 +3108,7 @@
                                 </style>
                               </object>
                               <packing>
-                                <property name="left_attach">3</property>
+                                <property name="left_attach">2</property>
                                 <property name="top_attach">0</property>
                               </packing>
                             </child>
