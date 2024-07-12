@@ -1,3 +1,3 @@
 # HamoniKR OS Welcome screen
 
-* Release for HamoniKR 6.0
+* Release for HamoniKR 6.0 (raspberry pi)

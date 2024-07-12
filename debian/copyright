@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: hamonikrwelcome
 Upstream-Contact: HamoniKR <pkg@hamonikr.org> 
-Source: https://github.com/hamonikr/hamonikrwelcome
+Source: 
 
 Files: *
 Copyright: 2015-2022 HamoniKR <pkg@hamonikr.org>

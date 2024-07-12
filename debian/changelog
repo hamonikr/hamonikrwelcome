@@ -1,117 +1,14 @@
-hamonikrwelcome (1.1.4) taebaek; urgency=medium
+hamonikrwelcomepi (1.0.1) taebaek; urgency=medium
 
   [JamesBae]
-  * Update theme change image
+  * Update hamonikrwelcome.py
+    - Change link 'user_guide_url'
 
- -- HamoniKR <pkg@hamonikr.org>  Wed, 16 Nov 2022 18:38:33 +0900
+ -- HamoniKR <pkg@hamonikr.org>  Thu, 27 Apr 2023 13:03:59 +0900
 
-hamonikrwelcome (1.1.3) taebaek; urgency=medium
-
-  [JamesBae]
-  * Modify alzip, alyac content
-
- -- HamoniKR <pkg@hamonikr.org>  Wed, 16 Nov 2022 10:22:33 +0900
-
-hamonikrwelcome (1.1.2) taebaek; urgency=medium
+hamonikrwelcomepi (1.0.0) taebaek; urgency=medium
 
   [JamesBae]
-  * Add Estsoft program
-   - Add ALYAC
-   - Add Alzip
+  * Hamonikr welcome in raspberry pi
 
- -- HamoniKR <pkg@hamonikr.org>  Mon, 14 Nov 2022 14:47:33 +0900
-
-hamonikrwelcome (1.1.1) taebaek; urgency=medium
-
-  [JamesBae]
-  * Update change panel layout
-   - fast changing
-
- -- HamoniKR <pkg@hamonikr.org>  Tue, 08 Nov 2022 15:09:33 +0900
-
-hamonikrwelcome (1.1.0) taebaek; urgency=medium
-
-  [JamesBae]
-  * Add Install Program & icon image
-   - kodi, default-jdk, python-pip, apache, tomcat, code, mysql-server, postgresql, asbru-cm, git, hamonikr-nemo-rabbitvcs, hamonikr-avahi-service
-
- -- HamoniKR <pkg@hamonikr.org>  Tue, 08 Nov 2022 14:07:50 +0900
-
-hamonikrwelcome (1.0.9) taebaek; urgency=medium
-
-  [JamesBae]
-  * Add site-compatibility-support
-   - 국민은행
-
- -- HamoniKR <pkg@hamonikr.org>  Wed, 02 Nov 2022 18:23:23 +0900
-
-hamonikrwelcome (1.0.8) taebaek; urgency=medium
-
-  [JamesBae]
-  * Fix chat icon image
-
- -- HamoniKR <pkg@hamonikr.org>  Tue, 25 Oct 2022 10:53:14 +0900
-
-hamonikrwelcome (1.0.7) taebaek; urgency=medium
-
-  [JamesBae]
-  * Add translations in polickit
-   - korean translation
-
- -- HamoniKR <pkg@hamonikr.org>  Tue, 25 Oct 2022 10:39:03 +0900
-
-hamonikrwelcome (1.0.6) taebaek; urgency=medium
-
-  [JamesBae]
-  * Fix KakaoTalk yml files
-   - Add lutris_kakaotalk image (desktop icon image)
-
- -- HamoniKR <pkg@hamonikr.org>  Mon, 24 Oct 2022 16:37:07 +0900
-
-hamonikrwelcome (1.0.5) taebaek; urgency=medium
-
-  [Kevin]
-  * Changed install process with zenity 
-   - Causes gdebi working very slow
-   - Add polickit policy
-
- -- HamoniKR <pkg@hamonikr.org>  Sat, 22 Oct 2022 01:13:57 +0900
-
-hamonikrwelcome (1.0.4) taebaek; urgency=medium
-
-  * Update translation
-   - 서류작업 > 관련문서
-   - 도움말 > 함께하기
-
- -- HamoniKR <pkg@hamonikr.org>  Tue, 18 Oct 2022 16:41:11 +0900
-
-hamonikrwelcome (1.0.3) taebaek; urgency=medium
-
-  * Fix copy libqt5im-nimf.so
-  * Fix lutris install
-    - PPA repo is deleted.
-
- -- HamoniKR <pkg@hamonikr.org>  Mon, 17 Oct 2022 13:27:40 +0900
-
-hamonikrwelcome (1.0.2) taebaek; urgency=medium
-
-  * Add Hancom Office install
-  * Add KakaoTalk install from lutris
-  * Update Korean translation
-  * Fix HamoniKR Welcome logo
-
- -- HamoniKR <pkg@hamonikr.org>  Thu, 13 Oct 2022 17:18:09 +0900
-
-
-hamonikrwelcome (1.0.1) taebaek; urgency=medium
-
-  * Update Korean translation
-
- -- HamoniKR <pkg@hamonikr.org>  Mon, 10 Oct 2022 17:20:15 +0900
-
-
-hamonikrwelcome (1.0.0) taebaek; urgency=medium
-
-  * Release for HamoniKR 6.0
-
- -- HamoniKR <pkg@hamonikr.org>  Mon, 10 Oct 2022 15:47:27 +0900
+ -- HamoniKR <pkg@hamonikr.org>  Mon, 17 Apr 2023 13:34:59 +0900

@@ -54,6 +54,7 @@ class HamonikrWelcome():
         desktop = config['DESKTOP']
         release_notes = config['RELEASE_NOTES_URL']
         new_features = config['NEW_FEATURES_URL']
+        user_guide_url = config['USER_GUIDE_URL']
         architecture = "64-bit"
 
         # distro-specific
@@ -71,47 +72,13 @@ class HamonikrWelcome():
 
         # Action buttons
         builder.get_object("button_forums").connect("clicked", self.visit, "https://hamonikr.org")
-        builder.get_object("button_documentation").connect("clicked", self.visit, "https://docs.hamonikr.org/hamonikr-6.0/")
+        builder.get_object("button_documentation").connect("clicked", self.visit, user_guide_url)
         builder.get_object("button_contribute").connect("clicked", self.visit, "https://github.com/hamonikr")
         builder.get_object("button_irc").connect("clicked", self.visit, "https://hamonikr.slack.com/")
-        builder.get_object("button_codecs").connect("clicked", self.visit, "apt://mint-meta-codecs?refresh=yes")
         builder.get_object("button_new_features").connect("clicked", self.visit, new_features)
         builder.get_object("button_release_notes").connect("clicked", self.visit, release_notes)
-        builder.get_object("button_mintupdate").connect("clicked", self.launch, "mintupdate")
-        builder.get_object("button_mintinstall").connect("clicked", self.launch, "mintinstall")
-        builder.get_object("button_timeshift").connect("clicked", self.pkexec, "timeshift-gtk")
-        builder.get_object("button_mintdrivers").connect("clicked", self.pkexec, "driver-manager")
-        builder.get_object("button_gufw").connect("clicked", self.launch, "gufw")
         builder.get_object("button_layout_legacy").connect("clicked", self.on_button_layout_clicked, LAYOUT_STYLE_LEGACY)
         builder.get_object("button_layout_new").connect("clicked", self.on_button_layout_clicked, LAYOUT_STYLE_NEW)
-
-        # Custom Second Step (recommended software)
-        builder.get_object("button_hancom").connect("clicked", self.pkexec, "/usr/share/hamonikr/hamonikrwelcome/scripts/hoffice-install")
-        builder.get_object("button_kakaotalk").connect("clicked", self.pkexec, "/usr/share/hamonikr/hamonikrwelcome/scripts/kakaotalk-install")
-        builder.get_object("button_alzip").connect("clicked", self.visit, "apt://alzip?refresh=yes")
-        builder.get_object("button_alyac").connect("clicked", self.on_button_download_alyac)
-        builder.get_object("button_alyac_manual").connect("clicked", self.visit, "https://cdn1.estsecurity.com/manual/alyacvms1/alyacforopenos1-manual_ko.pdf")
-        builder.get_object("button_site_compatibility_support").connect("clicked", self.pkexec, "/usr/share/hamonikr/hamonikrwelcome/scripts/site-compatibility-support")
-        builder.get_object("button_kodi").connect("clicked", self.pkexec, "/usr/share/hamonikr/hamonikrwelcome/scripts/kodi-install")
-        builder.get_object("button_korean_language").connect("clicked", self.on_button_korean_language)
-        
-        # Custom Third Step (development software)
-            # Development Language
-        builder.get_object("button_default_jdk").connect("clicked", self.visit, "apt://default-jdk?refresh=yes")
-        builder.get_object("button_python_pip").connect("clicked", self.visit, "apt://python3-pip?refresh=yes")
-            # WEB/WAS
-        builder.get_object("button_apache").connect("clicked", self.visit, "apt://apache2?refresh=yes")
-        builder.get_object("button_tomcat").connect("clicked", self.visit, "apt://tomcat9?refresh=yes")
-            # Editor (IDE)
-        builder.get_object("button_vscode").connect("clicked", self.pkexec, "/usr/share/hamonikr/hamonikrwelcome/scripts/vscode-install")
-            # DBMS
-        builder.get_object("button_mysql").connect("clicked", self.visit, "apt://mysql-server?refresh=yes")
-        builder.get_object("button_postgresql").connect("clicked", self.visit, "apt://postgresql?refresh=yes")
-            # etc
-        builder.get_object("button_asbru").connect("clicked", self.visit, "apt://asbru-cm?refresh=yes")
-        builder.get_object("button_git").connect("clicked", self.visit, "apt://git?refresh=yes")
-        builder.get_object("button_rabbitvcs").connect("clicked", self.visit, "apt://hamonikr-nemo-rabbitvcs?refresh=yes")
-        builder.get_object("button_avahi").connect("clicked", self.visit, "apt://hamonikr-avahi-service?refresh=yes")
 
         # Settings button depends on DE
         de_is_cinnamon = False
@@ -128,25 +95,9 @@ class HamonikrWelcome():
             # Hide settings
             builder.get_object("box_first_steps").remove(builder.get_object("box_settings"))
 
-        # Hide Desktop colors
-        builder.get_object("box_first_steps").remove(builder.get_object("box_colors"))
-
         # Hide Cinnamon layout settings in other DEs
         if not de_is_cinnamon:
             builder.get_object("box_first_steps").remove(builder.get_object("box_cinnamon"))
-
-        # Hide codecs box if they're already installed
-        cache = apt.Cache()
-        if "mint-meta-codecs" in cache and cache["mint-meta-codecs"].is_installed:
-            builder.get_object("box_first_steps").remove(builder.get_object("box_codecs"))
-
-        # Hide drivers if mintdrivers is absent (LMDE)
-        if not os.path.exists("/usr/bin/mintdrivers"):
-            builder.get_object("box_first_steps").remove(builder.get_object("box_drivers"))
-
-        # Hide new features page for LMDE
-        if dist_name == "LMDE":
-            builder.get_object("box_documentation").remove(builder.get_object("box_new_features"))
 
         # Construct the stack switcher
         list_box = builder.get_object("list_navigation")
@@ -159,14 +110,6 @@ class HamonikrWelcome():
         page = builder.get_object("page_first_steps")
         self.stack.add_named(page, "page_first_steps")
         list_box.add(SidebarRow(page, _("First Steps"), "dialog-information-symbolic"))
-
-        page = builder.get_object("page_second_steps")
-        self.stack.add_named(page, "page_second_steps")
-        list_box.add(SidebarRow(page, _("Second Steps"), "dialog-information-symbolic"))
-
-        page = builder.get_object("page_third_steps")
-        self.stack.add_named(page, "page_third_steps")
-        list_box.add(SidebarRow(page, _("Third Steps"), "dialog-information-symbolic"))
 
         page = builder.get_object("page_documentation")
         self.stack.add_named(page, "page_documentation")
@@ -193,9 +136,6 @@ class HamonikrWelcome():
 
         scale = window.get_scale_factor()
 
-        self.all_colors = ["green", "aqua", "blue", "brown", "grey", "orange", "pink", "purple", "red", "sand", "teal"]
-        self.init_color_info()  # Sets self.dark_mode and self.color based on current system configuration
-
         # Use HIDPI pictures if appropriate
         if scale == 1:
             surface = self.surface_for_path("/usr/share/hamonikr/hamonikrwelcome/legacy.png", scale)
@@ -210,16 +150,6 @@ class HamonikrWelcome():
             # surface = self.surface_for_path("/usr/share/hamonikr/hamonikrwelcome/modern-hidpi.png", scale)
             surface = self.surface_for_path("/usr/share/hamonikr/hamonikrwelcome/modern.png", scale)
             builder.get_object("img_modern").set_from_surface(surface)
-
-        path = "/usr/share/hamonikr/hamonikrwelcome/colors/"
-        if scale == 2:
-            path = "/usr/share/hamonikr/hamonikrwelcome/colors/hidpi/"
-        for color in self.all_colors:
-            builder.get_object("img_" + color).set_from_surface(self.surface_for_path("%s/%s.png" % (path, color), scale))
-            builder.get_object("button_" + color).connect("clicked", self.on_color_button_clicked, color)
-
-        builder.get_object("switch_dark").set_active(self.dark_mode)
-        builder.get_object("switch_dark").connect("state-set", self.on_dark_mode_changed)
 
         window.set_default_size(800, 500)
         window.show_all()
@@ -247,70 +177,7 @@ class HamonikrWelcome():
         elif style == LAYOUT_STYLE_NEW:
             os.system("rm ~/.hamonikr/theme/hamonikr-theme-setting.done && hamonikr-theme-setting macstyle")
         os.system("cinnamon --replace &")
-
-    def on_dark_mode_changed(self, button, state):
-        self.dark_mode = state
-        self.change_color()
-
-    def on_color_button_clicked(self, button, color):
-        self.color = color
-        self.change_color()
-
-    def change_color(self):
-        theme = "Mint-Y"
-        wm_theme = "Mint-Y"
-        cinnamon_theme = "Mint-Y-Dark"
-        if self.dark_mode:
-            theme = "%s-Dark" % theme
-        if self.color != "green":
-            theme = "%s-%s" % (theme, self.color.title())
-            cinnamon_theme = "Mint-Y-Dark-%s" % self.color.title()
-
-        if os.getenv("XDG_CURRENT_DESKTOP") in ["Cinnamon", "X-Cinnamon"]:
-            settings = Gio.Settings(schema="org.cinnamon.desktop.interface")
-            settings.set_string("gtk-theme", theme)
-            settings.set_string("icon-theme", theme)
-            Gio.Settings(schema="org.cinnamon.desktop.wm.preferences").set_string("theme", wm_theme)
-            Gio.Settings(schema="org.cinnamon.theme").set_string("name", cinnamon_theme)
-        elif os.getenv("XDG_CURRENT_DESKTOP") == "MATE":
-            settings = Gio.Settings(schema="org.mate.interface")
-            settings.set_string("gtk-theme", theme)
-            settings.set_string("icon-theme", theme)
-            Gio.Settings(schema="org.mate.Marco.general").set_string("theme", wm_theme)
-        elif os.getenv("XDG_CURRENT_DESKTOP") == "XFCE":
-            subprocess.call(["xfconf-query", "-c", "xsettings", "-p", "/Net/ThemeName", "-s", theme])
-            subprocess.call(["xfconf-query", "-c", "xsettings", "-p", "/Net/IconThemeName", "-s", theme])
-            subprocess.call(["xfconf-query", "-c", "xfwm4", "-p", "/general/theme", "-s", theme])
-
-    def init_color_info(self):
-        theme = "Mint-Y"
-        dark_theme = "Mint-Y-Dark"
-        if os.getenv("XDG_CURRENT_DESKTOP") in ["Cinnamon", "X-Cinnamon"]:
-            setting = Gio.Settings(schema="org.cinnamon.desktop.interface").get_string("gtk-theme")
-        elif os.getenv("XDG_CURRENT_DESKTOP") == "MATE":
-            setting = Gio.Settings(schema="org.mate.interface").get_string("gtk-theme")
-        elif os.getenv("XDG_CURRENT_DESKTOP") == "XFCE":
-            setting = subprocess.check_output(["xfconf-query", "-c", "xsettings", "-p", "/Net/ThemeName"]).decode("utf-8").strip()
-        
-        if setting.startswith(theme):
-            self.dark_mode = setting.startswith(dark_theme)
-            if self.dark_mode:
-                setting = setting.replace(dark_theme, "")
-            else:
-                setting = setting.replace(theme, "")
-            if len(setting) <= 1:
-                self.color = "green"
-            else:
-                self.color = setting[1:].lower()
-                if not self.color in self.all_colors:  # Assume green if our color is invalid
-                    self.color = "green"
-        else:
-            self.init_default_color_info()  # Bail out if we aren't working with a Mint-Y theme or the theme is unknown
     
-    def init_default_color_info(self):
-        self.color = "green"
-        self.dark_mode = False
-
     def visit(self, button, url):
         subprocess.Popen(["xdg-open", url])
 
@@ -319,12 +186,6 @@ class HamonikrWelcome():
 
     def pkexec(self, button, command):
         subprocess.Popen(["pkexec", command])
-
-    def on_button_korean_language (self, button):
-        os.system("sh -c /usr/share/hamonikr/hamonikrwelcome/scripts/kodi_korean_support")
-
-    def on_button_download_alyac (self, button):
-        os.system("sh -c /usr/share/hamonikr/hamonikrwelcome/scripts/alyac-download")
 
 if __name__ == "__main__":
     HamonikrWelcome()
