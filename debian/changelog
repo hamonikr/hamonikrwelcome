@@ -1,3 +1,11 @@
+hamonikrwelcomepi (1.0.1+h1) unstable; urgency=medium
+
+  [Kevin]
+  * Release for bookworm arm64
+    - No Changes
+
+ -- HamoniKR <pkg@hamonikr.org>  Fri, 12 Jul 2024 15:12:49 +0900
+
 hamonikrwelcomepi (1.0.1) taebaek; urgency=medium
 
   [JamesBae]
